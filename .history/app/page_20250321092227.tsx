@@ -1,8 +1,7 @@
 import React from 'react'
 import { HomePageWrapper } from '@/components'
 
-export const runtime = "edge";
-
+expo
 const HomePage = () => {
   return (
     <div className='main'>
