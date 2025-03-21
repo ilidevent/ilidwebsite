@@ -49,8 +49,8 @@ const AboutPageWrapper = () => {
     nm: "90vh",
     md: "55vh",
     sm: "72vh",
-    smm: "80vh",
-    smmm: "84vh",
+    smm: "83vh",
+    smmm: "8vh",
   };
 
   const aboutContent = {

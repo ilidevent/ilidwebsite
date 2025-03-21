@@ -52,8 +52,8 @@ const SpeakerPageWrapper = () => {
     nm: "100vh",
     md: "67vh",
     sm: "86vh",
-    smm: "92vh",
-    smmm: "104vh",
+    smm: "95vh",
+    smmm: "107vh",
   };
 
   const formContent = {

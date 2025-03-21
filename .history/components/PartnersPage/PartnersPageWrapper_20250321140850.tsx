@@ -2,22 +2,21 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import Lenis from "lenis";
-import HeroSection from "../ReUsables/HeroSection";
-import PaddingTop from "../ReUsables/PaddingTop";
-import SpeakerWrapper from "../ReUsables/SpeakerWrapper";
-import VenueBanner from "../ReUsables/VenueBanner";
-import SloganBanner from "../ReUsables/SloganBanner";
 import ReusableSection from "../ReUsables/ReusableSection";
-import SponsorsWrapper from "../ReUsables/SponsorsWrapper";
-import JoinWrapper from "../ReUsables/JoinWrapper";
-import FAQSection from "../ReUsables/FAQSection";
-import Navbar from "../Navigation/Navbar";
-import Footer from "../Navigation/Footer";
 import Preloader from "../Navigation/Preloader";
-import SpeakerForm from "../SpeakerPage/SpeakerForm";
-import { JoinDataTwo } from "@/utils";
+import Footer from "../Navigation/Footer";
+import { WhySponsorData, JoinDataThree } from "@/utils";
+import SloganBanner from "../ReUsables/SloganBanner";
+import HeroSection from "../ReUsables/HeroSection";
+import SponsorsWrapper from "../ReUsables/SponsorsWrapper";
+import FAQSection from "../ReUsables/FAQSection";
+import JoinWrapper from "../ReUsables/JoinWrapper";
+import Navbar from "../Navigation/Navbar";
+import PartnersForm from "./PartnersForm";
+import VenueBanner from "../ReUsables/VenueBanner";
+import PaddingTop from "../ReUsables/PaddingTop";
 
-const SpeakerPageWrapper = () => {
+const PartnersPageWrapper = () => {
   const [lenis, setLenis] = useState<Lenis | null>(null);
   const formRef = useRef<HTMLDivElement | null>(null);
 
@@ -38,37 +37,21 @@ const SpeakerPageWrapper = () => {
   }, []);
 
   const HeroContent = {
-    largeText: "Our 2025 speakers & workshop facilitators lineup",
+    largeText: "Sponsor or Partner at ILID 2025",
     normalText:
-      "Meet the phenomenal speakers who will shape the discussions and drive the quality of talks at ILID 2025.",
+      "Sponsor or Partner with us to ignite innovation, empower emerging leaders, and create resilient, future-ready communities in Cameroon.",
     buttonProps: {
-      name: "Become a speaker",
+      name: "Partner with us",
     },
-    buttonText: "Share your expertise and shape the future at ILID 2025.",
   };
 
-  const HeroBreakpoints = {
-    lg: "100vh",
-    nm: "100vh",
-    md: "67vh",
-    sm: "86vh",
-    smm: "92vh",
-    smmm: "104vh",
-  };
-
-  const formContent = {
-    header: "Speak at ILID 2025",
-    keywords: ["Speak"],
-    text: "Join us by sharing your expertise and inspiring change. Complete the form below to be considered as a speaker at ILID 2025.",
-  };
-
-  const speakersContent = {
-    header: "Unparalleled Perspectives",
-    keywords: [],
-    text: "Get inspired by emerging voices and industry pioneers as they unite to redefine our community and spark transformative change.",
+  const whyContent = {
+    header: "Why Sponsor or Partner at ILID 2025?",
+    keywords: ["Why"],
+    text: "ILID offers a unique opportunity to be part of a transformative initiative aimed at reshaping Cameroon's infrastructure. By sponsoring or partnering, you'll gain from:",
     buttonData: {
-      name: "Secure my spot at ILID 2025",
-      link: "/attend",
+      name: "Learn more about ILID 2025",
+      link: "/about",
     },
   };
 
@@ -76,10 +59,6 @@ const SpeakerPageWrapper = () => {
     header: " Partners & Sponsors",
     keywords: ["Partners", "&", "Sponsors"],
     text: "Showcasing our valued partners and sponsors who play a key role in supporting and enhancing our initiatives.",
-    buttonData: {
-      name: "Partner with us",
-      link: "/partners",
-    },
   };
 
   const joinContent = {
@@ -87,9 +66,9 @@ const SpeakerPageWrapper = () => {
     keywords: ["Join"],
     text: "Be part of ILID 2025. Collaborate, Share insights, and Pitch transformative ideas to drive sustainable development and innovation forward.",
     buttonData: {
-      name: "See the full program",
-      link: "/agenda",
-      buttonText: "Explore the ILID 2025 agenda and plan your experience.",
+      name: "Secure my spot at ILID 2025",
+      link: "/attend",
+      buttonText: "Join us to explore, learn, and connect at ILID 2025.",
     },
   };
 
@@ -97,6 +76,21 @@ const SpeakerPageWrapper = () => {
     header: "Frequently Asked Questions",
     keywords: ["Frequently"],
     text: "Explore our FAQ for essential insights to ensure a successful ILID experience. If your questions aren’t answered here, contact us at info@ilidevent.com.",
+  };
+
+  const formContent = {
+    header: "Become a Sponsor or Partner",
+    keywords: ["Become"],
+    text: "Empower innovation and drive positive change. Fill out the form to become a sponsor or  partner at ILID 2025.",
+  };
+
+  const HeroBreakpoints = {
+    lg: "80vh",
+    nm: "90vh",
+    md: "55vh",
+    sm: "72vh",
+    smm: "82vh",
+    smmm: "85vh",
   };
 
   //Preloader
@@ -127,32 +121,29 @@ const SpeakerPageWrapper = () => {
           backgroundColor="#FFF6ED"
           ref={formRef}
         >
-          <SpeakerForm />
-        </ReusableSection>
-        <PaddingTop backgroundColor="#C24002" />
-        <ReusableSection
-          header={speakersContent.header}
-          keywords={speakersContent.keywords}
-          text={speakersContent.text}
-          textColor="#FFF6ED"
-          backgroundColor="#C24002"
-          buttonData={speakersContent.buttonData}
-        >
-          <SpeakerWrapper />
+          <PartnersForm />
         </ReusableSection>
         <PaddingTop backgroundColor="#FFF6ED" />
+        <SloganBanner />
+        <ReusableSection
+          header={whyContent.header}
+          keywords={whyContent.keywords}
+          text={whyContent.text}
+          textColor="#000000"
+          backgroundColor="#FFF6ED"
+          buttonData={whyContent.buttonData}
+        >
+          <JoinWrapper joinData={WhySponsorData} />
+        </ReusableSection>
         <ReusableSection
           header={partnerContent.header}
           keywords={partnerContent.keywords}
           text={partnerContent.text}
           textColor="#000000"
           backgroundColor="#FFF6ED"
-          buttonData={partnerContent.buttonData}
         >
           <SponsorsWrapper />
         </ReusableSection>
-        <PaddingTop backgroundColor="#FFF6ED" />
-        <SloganBanner />
         <ReusableSection
           header={joinContent.header}
           keywords={joinContent.keywords}
@@ -161,7 +152,7 @@ const SpeakerPageWrapper = () => {
           backgroundColor="#FFF6ED"
           buttonData={joinContent.buttonData}
         >
-          <JoinWrapper joinData={JoinDataTwo} />
+          <JoinWrapper joinData={JoinDataThree} />
         </ReusableSection>
         <ReusableSection
           header={faqContent.header}
@@ -179,4 +170,4 @@ const SpeakerPageWrapper = () => {
   );
 };
 
-export default SpeakerPageWrapper;
+export default PartnersPageWrapper;

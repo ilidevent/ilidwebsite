@@ -65,7 +65,7 @@ const Preloader = ({
           if (newValue === 100) {
             setFinished(true);
           }
-          const delay = Math.floor(Math.random() * 200) + 30;
+          const delay = Math.floor(Math.random() * 200) + 20;
           timerId = window.setTimeout(updateCounter, delay);
           return newValue;
         }

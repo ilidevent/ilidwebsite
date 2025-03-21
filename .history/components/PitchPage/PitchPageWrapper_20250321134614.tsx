@@ -49,8 +49,8 @@ const PitchPageWrapper = () => {
     nm: "90vh",
     md: "55vh",
     sm: "70vh",
-    smm: "78vh",
-    smmm: "83vh",
+    smm: "80vh",
+    smmm: "85vh",
   };
 
   const pitchContent = {
@@ -166,7 +166,7 @@ const PitchPageWrapper = () => {
         >
           <AboutboxWrapper data={BenefitsData} />
         </ReusableSection>
-        <ReusableSection
+        {/* <ReusableSection
           header={whattoExpectContent.header}
           keywords={whattoExpectContent.keywords}
           text={whattoExpectContent.text}
@@ -175,7 +175,7 @@ const PitchPageWrapper = () => {
           buttonData={whattoExpectContent.buttonData}
         >
           <PitchApply />
-        </ReusableSection>
+        </ReusableSection> */}
         <PaddingTop backgroundColor="#FFF6ED" />
         <SloganBanner />
         <ReusableSection
@@ -188,7 +188,7 @@ const PitchPageWrapper = () => {
         >
           <DontMissWrapper data={WhoApplyData} />
         </ReusableSection>
-        <ReusableSection
+        {/* <ReusableSection
           header={partnerContent.header}
           keywords={partnerContent.keywords}
           text={partnerContent.text}
@@ -218,7 +218,7 @@ const PitchPageWrapper = () => {
         >
           <FAQSection />
         </ReusableSection>
-        <Footer />
+        <Footer /> */}
       </div>
     </>
   );

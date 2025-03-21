@@ -1,26 +1,28 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Lenis from "lenis";
-import Footer from "../Navigation/Footer";
-import Preloader from "../Navigation/Preloader";
+import Navbar from "../Navigation/Navbar";
 import HeroSection from "../ReUsables/HeroSection";
 import VenueBanner from "../ReUsables/VenueBanner";
-import SloganBanner from "../ReUsables/SloganBanner";
+import Lenis from "lenis";
+import Footer from "../Navigation/Footer";
 import ReusableSection from "../ReUsables/ReusableSection";
+import SloganBanner from "../ReUsables/SloganBanner";
+import PaddingTop from "../ReUsables/PaddingTop";
 import AboutboxWrapper from "../ReUsables/AboutboxWrapper";
-import DontMissWrapper from "../ReUsables/DontMissWrapper";
+import SpeakerWrapper from "../ReUsables/SpeakerWrapper";
+import OpportunityWrapper from "../ReUsables/OpportunityWrapper";
 import VenueWrapper from "../ReUsables/VenueWrapper";
-import QuickStoryWrapper from "./QuickStoryWrapper";
-import { AboutData, DontMissData, JoinData } from "@/utils";
 import CountDown from "../ReUsables/CountDown";
 import SponsorsWrapper from "../ReUsables/SponsorsWrapper";
 import JoinWrapper from "../ReUsables/JoinWrapper";
-import Navbar from "../Navigation/Navbar";
 import FAQSection from "../ReUsables/FAQSection";
-import PaddingTop from "../ReUsables/PaddingTop";
+import AgendaWrapper from "../ReUsables/AgendaWrapper";
+import Preloader from "../Navigation/Preloader";
+import { JoinData } from "@/utils";
+import { AboutData } from "@/utils";
 
-const AboutPageWrapper = () => {
+const HomePageWrapper = () => {
   useEffect(() => {
     const lenisInstance = new Lenis({
       duration: 1,
@@ -35,24 +37,26 @@ const AboutPageWrapper = () => {
   }, []);
 
   const HeroContent = {
-    largeText: "Connecting, Innovating and Creating",
+    largeText: "Youth building resilient communities through Infrastructure",
     normalText:
-      "ILID 2025 brings together visionaries from various sectors to collaborate and create lasting change.",
+      "ILID helps STEM students to confront real infrastructure problems with sustainable solutions and practical efforts. Together, we are converting ideas into actions that have a lasting effect on our communities.",
+    buttonText: "Got an innovative solution to present?",
     buttonProps: {
-      name: "Secure my spot",
-      link: "/attend",
+      name: "Pitch your idea",
+      link: "/pitch-contest",
     },
   };
 
   const HeroBreakpoints = {
-    lg: "80vh",
-    nm: "90vh",
-    md: "55vh",
-    sm: "72vh",
-    smm: "80vh",
-    smmm: "84vh",
+    lg: "103vh",
+    nm: "108vh",
+    md: "68vh",
+    sm: "90vh",
+    smm: "102vh",
+    smmm: "110vh",
   };
 
+  //SectionContent
   const aboutContent = {
     header: "About ILID 2025",
     keywords: ["About"],
@@ -63,23 +67,23 @@ const AboutPageWrapper = () => {
     },
   };
 
-  const quickContent = {
-    header: "Quick Story behind ILID",
-    keywords: ["Quick", "Story"],
-    text: "A movement that engages the innovative spirit and drive of young Cameroonians to produce sustainable and practical solutions for critical problems.",
+  const opportunityContent = {
+    header: "Unlock New Opportunities",
+    keywords: ["Unlock"],
+    text: "ILID offers a unique opportunity to be part of a transformative initiative aimed at reshaping Cameroon's infrastructure. By attending, you'll gain from:",
     buttonData: {
       name: "Secure my spot at ILID 2025",
       link: "/attend",
     },
   };
 
-  const missContent = {
-    header: "Don't Miss Out on ILID 2025",
-    keywords: ["Don't", "Miss", "Out"],
-    text: "Gain insights, network with top professionals, and be part of a movement driving sustainable progress.",
+  const speakersContent = {
+    header: "Unparalleled Perspectives",
+    keywords: [],
+    text: "Get inspired by emerging voices and industry pioneers as they unite to redefine our community and spark transformative change.",
     buttonData: {
-      name: "Secure my spot at ILID 2025",
-      link: "/attend",
+      name: "See all speakers",
+      link: "/speakers",
     },
   };
 
@@ -87,6 +91,16 @@ const AboutPageWrapper = () => {
     header: "ILID 2025 event venue",
     keywords: ["ILID", "2025"],
     text: "Join us at National Advanced School of Public Works for an immersive and transformative ILID experience.",
+  };
+
+  const agendaContent = {
+    header: "ILID 2025 Agenda",
+    keywords: ["Agenda"],
+    text: "Immerse yourself in four days of learning, innovation, and networking for a sustainable future.",
+    buttonData: {
+      name: "Secure my spot at ILID 2025",
+      link: "/attend",
+    },
   };
 
   const countDownContent = {
@@ -100,7 +114,7 @@ const AboutPageWrapper = () => {
   };
 
   const partnerContent = {
-    header: "Partners & Sponsors",
+    header: " Partners & Sponsors",
     keywords: ["Partners", "&", "Sponsors"],
     text: "Showcasing our valued partners and sponsors who play a key role in supporting and enhancing our initiatives.",
     buttonData: {
@@ -132,10 +146,11 @@ const AboutPageWrapper = () => {
   return (
     <>
       {!animationFinished && <Preloader setAnimation={setAnimationFinished} />}
+
       <div
         style={{
           height: !animationFinished ? "100vh" : "",
-          overflow: !animationFinished ? "hidden" : "",
+          overflow: !animationFinished ? "hidden" : "visible",
         }}
       >
         <Navbar animationFinished={animationFinished}/>
@@ -152,28 +167,27 @@ const AboutPageWrapper = () => {
           <AboutboxWrapper data={AboutData} />
         </ReusableSection>
         <ReusableSection
-          header={quickContent.header}
-          keywords={quickContent.keywords}
-          text={quickContent.text}
+          header={opportunityContent.header}
+          keywords={opportunityContent.keywords}
+          text={opportunityContent.text}
           textColor="#000000"
           backgroundColor="#FFF6ED"
-          buttonData={quickContent.buttonData}
+          buttonData={opportunityContent.buttonData}
         >
-          <QuickStoryWrapper />
+          <OpportunityWrapper />
         </ReusableSection>
-        <PaddingTop backgroundColor="#FFF6ED" />
-        <SloganBanner />
-        <PaddingTop backgroundColor="#FFF6ED" />
+        <PaddingTop backgroundColor="#C24002" />
         <ReusableSection
-          header={missContent.header}
-          keywords={missContent.keywords}
-          text={missContent.text}
-          textColor="#000000"
-          backgroundColor="#FFF6ED"
-          buttonData={missContent.buttonData}
+          header={speakersContent.header}
+          keywords={speakersContent.keywords}
+          text={speakersContent.text}
+          textColor="#FFF6ED"
+          backgroundColor="#C24002"
+          buttonData={speakersContent.buttonData}
         >
-          <DontMissWrapper data={DontMissData} />
+          <SpeakerWrapper />
         </ReusableSection>
+        <PaddingTop backgroundColor="#FFF6ED" />
         <ReusableSection
           header={venueContent.header}
           keywords={venueContent.keywords}
@@ -183,6 +197,18 @@ const AboutPageWrapper = () => {
         >
           <VenueWrapper />
         </ReusableSection>
+        <ReusableSection
+          header={agendaContent.header}
+          keywords={agendaContent.keywords}
+          text={agendaContent.text}
+          textColor="#000000"
+          backgroundColor="#FFF6ED"
+          buttonData={agendaContent.buttonData}
+        >
+          <AgendaWrapper />
+        </ReusableSection>
+        <SloganBanner />
+        <PaddingTop backgroundColor="#FFF6ED" />
         <PaddingTop backgroundColor="#FFF6ED" />
         <PaddingTop backgroundColor="#C24002" />
         <ReusableSection
@@ -226,10 +252,10 @@ const AboutPageWrapper = () => {
         >
           <FAQSection />
         </ReusableSection>
-        <Footer />
+        <Footer/>
       </div>
     </>
   );
 };
 
-export default AboutPageWrapper;
+export default HomePageWrapper;

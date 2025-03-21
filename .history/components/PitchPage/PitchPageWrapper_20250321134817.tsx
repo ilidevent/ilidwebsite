@@ -49,8 +49,8 @@ const PitchPageWrapper = () => {
     nm: "90vh",
     md: "55vh",
     sm: "70vh",
-    smm: "78vh",
-    smmm: "83vh",
+    smm: "80vh",
+    smmm: "85vh",
   };
 
   const pitchContent = {
