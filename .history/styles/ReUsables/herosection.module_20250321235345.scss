@@ -207,13 +207,13 @@
   }
 
   .hero__section {
-    height: calc(var(--smm) - 90vh);
+    height: calc(var(--smm) - 5vh);
   }
 }
 
 @media screen and (max-width: 430px) and (max-height: 870px) {
   .hero__section {
-    height: calc(var(--smm) - 40vh);
+    height: calc(var(--smm) - 3vh);
   }
 }
 
