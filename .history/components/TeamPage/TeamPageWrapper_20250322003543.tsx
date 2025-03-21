@@ -1,22 +1,22 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+import Lenis from "lenis";
+import TeamWrapper from "./TeamWrapper";
 import HeroSection from "../ReUsables/HeroSection";
 import VenueBanner from "../ReUsables/VenueBanner";
-import Lenis from "lenis";
-import Navbar from "../Navigation/Navbar";
-import AgendaWrapper from "../ReUsables/AgendaWrapper";
-import ReusableSection from "../ReUsables/ReusableSection";
-import SloganBanner from "../ReUsables/SloganBanner";
 // import SponsorsWrapper from "../ReUsables/SponsorsWrapper";
-import FAQSection from "../ReUsables/FAQSection";
-import Footer from "../Navigation/Footer";
-import Preloader from "../Navigation/Preloader";
-import JoinWrapper from "../ReUsables/JoinWrapper";
-import { JoinData } from "@/utils";
 import PaddingTop from "../ReUsables/PaddingTop";
+import FAQSection from "../ReUsables/FAQSection";
+import Preloader from "../Navigation/Preloader";
+import Footer from "../Navigation/Footer";
+import Navbar from "../Navigation/Navbar";
+import ReusableSection from "../ReUsables/ReusableSection";
 
-const AgendaPageWrapper = () => {
+const TeamPageWrapper = () => {
+  const [lenis, setLenis] = useState<Lenis | null>(null);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
     const lenisInstance = new Lenis({
       duration: 1,
@@ -28,41 +28,37 @@ const AgendaPageWrapper = () => {
     }
 
     requestAnimationFrame(raf);
+
+    // Store the lenis instance in state
+    setLenis(lenisInstance);
   }, []);
 
   const HeroContent = {
-    largeText: "ILID 2025 event schedule",
+    largeText: "Introducing the creative minds behind ILID 2025",
     normalText:
-      " Experience a dynamic four-day event filled with summits, labs, and pitch contests for transformative ideas",
+      "Get to know the team working collaboratively behind the scenes to help overcome infrastructure problems and foster sustainable progress for our communities.",
     buttonProps: {
-      name: "Secure my spot",
-      link: "/attend",
+      name: "Meet the team",
     },
   };
 
   const HeroBreakpoints = {
     lg: "80vh",
     nm: "90vh",
-    md: "58vh",
-    sm: "65vh",
-    smm: "74vh",
-    smmm: "81vh",
+    md: "60vh",
+    sm: "78vh",
+    smm: "90vh",
+    smmm: "95vh",
   };
 
-  const agendaContent = {
-    header: "ILID 2025 Agenda",
-    keywords: ["Agenda"],
-    text: "Immerse yourself in four days of learning, innovation, and networking for a sustainable future.",
-    buttonData: {
-      name: "Secure my spot at ILID 2025",
-      link: "/attend",
-    },
+  const sectionContent = {
+    header: "The Minds behind the Vision",
+    keywords: ["Minds", "Vision"],
+    text: "Get to know the team working collaboratively behind the scenes to help overcome infrastructure problems.",
   };
-
-  
 
   // const partnerContent = {
-  //   header: "Partners & Sponsors",
+  //   header: " Partners & Sponsors",
   //   keywords: ["Partners", "&", "Sponsors"],
   //   text: "Showcasing our valued partners and sponsors who play a key role in supporting and enhancing our initiatives.",
   //   buttonData: {
@@ -71,23 +67,11 @@ const AgendaPageWrapper = () => {
   //   },
   // };
 
-  const joinContent = {
-    header: "Join the Movement",
-    keywords: ["Join"],
-    text: "Be part of ILID 2025. Collaborate, Share insights, and Pitch transformative ideas to drive sustainable development and innovation forward.",
-    buttonData: {
-      name: "Secure my spot at ILID 2025",
-      link: "/attend",
-      buttonText: "Join us to explore, learn, and connect at ILID 2025.",
-    },
-  };
-
   const faqContent = {
     header: "Frequently Asked Questions",
     keywords: ["Frequently"],
     text: "Explore our FAQ for essential insights to ensure a successful ILID experience. If your questions aren’t answered here, contact us at info@ilidevent.com.",
   };
-
   //Preloader
   const [animationFinished, setAnimationFinished] = useState(false);
 
@@ -102,21 +86,25 @@ const AgendaPageWrapper = () => {
         }}
       >
         <Navbar animationFinished={animationFinished}/>
-        <HeroSection herocontent={HeroContent} breakpoints={HeroBreakpoints} />
+        <HeroSection
+          herocontent={HeroContent}
+          breakpoints={HeroBreakpoints}
+          lenis={lenis}
+          reference={sectionRef}
+        />
         <VenueBanner />
         <ReusableSection
-          header={agendaContent.header}
-          keywords={agendaContent.keywords}
-          text={agendaContent.text}
+          header={sectionContent.header}
+          keywords={sectionContent.keywords}
+          text={sectionContent.text}
           textColor="#000000"
           backgroundColor="#FFF6ED"
-          buttonData={agendaContent.buttonData}
+          ref={sectionRef}
         >
-          <AgendaWrapper />
+          <TeamWrapper />
         </ReusableSection>
         <PaddingTop backgroundColor="#FFF6ED" />
-        <SloganBanner />
-        {/* <ReusableSection
+        <ReusableSection
           header={partnerContent.header}
           keywords={partnerContent.keywords}
           text={partnerContent.text}
@@ -125,16 +113,6 @@ const AgendaPageWrapper = () => {
           buttonData={partnerContent.buttonData}
         >
           <SponsorsWrapper />
-        </ReusableSection> */}
-        <ReusableSection
-          header={joinContent.header}
-          keywords={joinContent.keywords}
-          text={joinContent.text}
-          textColor="#000000"
-          backgroundColor="#FFF6ED"
-          buttonData={joinContent.buttonData}
-        >
-          <JoinWrapper joinData={JoinData} />
         </ReusableSection>
         <ReusableSection
           header={faqContent.header}
@@ -152,4 +130,4 @@ const AgendaPageWrapper = () => {
   );
 };
 
-export default AgendaPageWrapper;
+export default TeamPageWrapper;

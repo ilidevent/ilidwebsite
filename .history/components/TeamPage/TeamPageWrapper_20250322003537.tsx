@@ -57,15 +57,15 @@ const TeamPageWrapper = () => {
     text: "Get to know the team working collaboratively behind the scenes to help overcome infrastructure problems.",
   };
 
-  // const partnerContent = {
-  //   header: " Partners & Sponsors",
-  //   keywords: ["Partners", "&", "Sponsors"],
-  //   text: "Showcasing our valued partners and sponsors who play a key role in supporting and enhancing our initiatives.",
-  //   buttonData: {
-  //     name: "Partner with us",
-  //     link: "/partners",
-  //   },
-  // };
+  const partnerContent = {
+    header: " Partners & Sponsors",
+    keywords: ["Partners", "&", "Sponsors"],
+    text: "Showcasing our valued partners and sponsors who play a key role in supporting and enhancing our initiatives.",
+    buttonData: {
+      name: "Partner with us",
+      link: "/partners",
+    },
+  };
 
   const faqContent = {
     header: "Frequently Asked Questions",
@@ -104,7 +104,7 @@ const TeamPageWrapper = () => {
           <TeamWrapper />
         </ReusableSection>
         <PaddingTop backgroundColor="#FFF6ED" />
-        {/* <ReusableSection
+        <ReusableSection
           header={partnerContent.header}
           keywords={partnerContent.keywords}
           text={partnerContent.text}
@@ -113,7 +113,7 @@ const TeamPageWrapper = () => {
           buttonData={partnerContent.buttonData}
         >
           <SponsorsWrapper />
-        </ReusableSection> */}
+        </ReusableSection>
         <ReusableSection
           header={faqContent.header}
           keywords={faqContent.keywords}

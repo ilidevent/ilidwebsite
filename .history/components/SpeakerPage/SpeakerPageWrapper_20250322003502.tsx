@@ -1,22 +1,26 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import HeroSection from "../ReUsables/HeroSection";
-import VenueBanner from "../ReUsables/VenueBanner";
+import React, { useEffect, useState, useRef } from "react";
 import Lenis from "lenis";
-import Navbar from "../Navigation/Navbar";
-import AgendaWrapper from "../ReUsables/AgendaWrapper";
-import ReusableSection from "../ReUsables/ReusableSection";
+import HeroSection from "../ReUsables/HeroSection";
+import PaddingTop from "../ReUsables/PaddingTop";
+import SpeakerWrapper from "../ReUsables/SpeakerWrapper";
+import VenueBanner from "../ReUsables/VenueBanner";
 import SloganBanner from "../ReUsables/SloganBanner";
+import ReusableSection from "../ReUsables/ReusableSection";
 // import SponsorsWrapper from "../ReUsables/SponsorsWrapper";
+import JoinWrapper from "../ReUsables/JoinWrapper";
 import FAQSection from "../ReUsables/FAQSection";
+import Navbar from "../Navigation/Navbar";
 import Footer from "../Navigation/Footer";
 import Preloader from "../Navigation/Preloader";
-import JoinWrapper from "../ReUsables/JoinWrapper";
-import { JoinData } from "@/utils";
-import PaddingTop from "../ReUsables/PaddingTop";
+import SpeakerForm from "../SpeakerPage/SpeakerForm";
+import { JoinDataTwo } from "@/utils";
 
-const AgendaPageWrapper = () => {
+const SpeakerPageWrapper = () => {
+  const [lenis, setLenis] = useState<Lenis | null>(null);
+  const formRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
     const lenisInstance = new Lenis({
       duration: 1,
@@ -28,41 +32,48 @@ const AgendaPageWrapper = () => {
     }
 
     requestAnimationFrame(raf);
+
+    // Store the lenis instance in state
+    setLenis(lenisInstance);
   }, []);
 
   const HeroContent = {
-    largeText: "ILID 2025 event schedule",
+    largeText: "Our 2025 speakers & workshop facilitators lineup",
     normalText:
-      " Experience a dynamic four-day event filled with summits, labs, and pitch contests for transformative ideas",
+      "Meet the phenomenal speakers who will shape the discussions and drive the quality of talks at ILID 2025.",
     buttonProps: {
-      name: "Secure my spot",
-      link: "/attend",
+      name: "Become a speaker",
     },
+    buttonText: "Share your expertise and shape the future at ILID 2025.",
   };
 
   const HeroBreakpoints = {
-    lg: "80vh",
-    nm: "90vh",
-    md: "58vh",
-    sm: "65vh",
-    smm: "74vh",
-    smmm: "81vh",
+    lg: "100vh",
+    nm: "100vh",
+    md: "67vh",
+    sm: "86vh",
+    smm: "92vh",
+    smmm: "104vh",
   };
 
-  const agendaContent = {
-    header: "ILID 2025 Agenda",
-    keywords: ["Agenda"],
-    text: "Immerse yourself in four days of learning, innovation, and networking for a sustainable future.",
+  const formContent = {
+    header: "Speak at ILID 2025",
+    keywords: ["Speak"],
+    text: "Join us by sharing your expertise and inspiring change. Complete the form below to be considered as a speaker at ILID 2025.",
+  };
+
+  const speakersContent = {
+    header: "Unparalleled Perspectives",
+    keywords: [],
+    text: "Get inspired by emerging voices and industry pioneers as they unite to redefine our community and spark transformative change.",
     buttonData: {
       name: "Secure my spot at ILID 2025",
       link: "/attend",
     },
   };
 
-  
-
   // const partnerContent = {
-  //   header: "Partners & Sponsors",
+  //   header: " Partners & Sponsors",
   //   keywords: ["Partners", "&", "Sponsors"],
   //   text: "Showcasing our valued partners and sponsors who play a key role in supporting and enhancing our initiatives.",
   //   buttonData: {
@@ -76,9 +87,9 @@ const AgendaPageWrapper = () => {
     keywords: ["Join"],
     text: "Be part of ILID 2025. Collaborate, Share insights, and Pitch transformative ideas to drive sustainable development and innovation forward.",
     buttonData: {
-      name: "Secure my spot at ILID 2025",
-      link: "/attend",
-      buttonText: "Join us to explore, learn, and connect at ILID 2025.",
+      name: "See the full program",
+      link: "/agenda",
+      buttonText: "Explore the ILID 2025 agenda and plan your experience.",
     },
   };
 
@@ -94,7 +105,6 @@ const AgendaPageWrapper = () => {
   return (
     <>
       {!animationFinished && <Preloader setAnimation={setAnimationFinished} />}
-
       <div
         style={{
           height: !animationFinished ? "100vh" : "",
@@ -102,21 +112,36 @@ const AgendaPageWrapper = () => {
         }}
       >
         <Navbar animationFinished={animationFinished}/>
-        <HeroSection herocontent={HeroContent} breakpoints={HeroBreakpoints} />
+        <HeroSection
+          herocontent={HeroContent}
+          breakpoints={HeroBreakpoints}
+          lenis={lenis}
+          reference={formRef}
+        />
         <VenueBanner />
         <ReusableSection
-          header={agendaContent.header}
-          keywords={agendaContent.keywords}
-          text={agendaContent.text}
+          header={formContent.header}
+          keywords={formContent.keywords}
+          text={formContent.text}
           textColor="#000000"
           backgroundColor="#FFF6ED"
-          buttonData={agendaContent.buttonData}
+          ref={formRef}
         >
-          <AgendaWrapper />
+          <SpeakerForm />
+        </ReusableSection>
+        <PaddingTop backgroundColor="#C24002" />
+        <ReusableSection
+          header={speakersContent.header}
+          keywords={speakersContent.keywords}
+          text={speakersContent.text}
+          textColor="#FFF6ED"
+          backgroundColor="#C24002"
+          buttonData={speakersContent.buttonData}
+        >
+          <SpeakerWrapper />
         </ReusableSection>
         <PaddingTop backgroundColor="#FFF6ED" />
-        <SloganBanner />
-        {/* <ReusableSection
+        <ReusableSection
           header={partnerContent.header}
           keywords={partnerContent.keywords}
           text={partnerContent.text}
@@ -125,7 +150,9 @@ const AgendaPageWrapper = () => {
           buttonData={partnerContent.buttonData}
         >
           <SponsorsWrapper />
-        </ReusableSection> */}
+        </ReusableSection>
+        <PaddingTop backgroundColor="#FFF6ED" />
+        <SloganBanner />
         <ReusableSection
           header={joinContent.header}
           keywords={joinContent.keywords}
@@ -134,7 +161,7 @@ const AgendaPageWrapper = () => {
           backgroundColor="#FFF6ED"
           buttonData={joinContent.buttonData}
         >
-          <JoinWrapper joinData={JoinData} />
+          <JoinWrapper joinData={JoinDataTwo} />
         </ReusableSection>
         <ReusableSection
           header={faqContent.header}
@@ -152,4 +179,4 @@ const AgendaPageWrapper = () => {
   );
 };
 
-export default AgendaPageWrapper;
+export default SpeakerPageWrapper;

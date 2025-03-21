@@ -188,7 +188,7 @@ const PitchPageWrapper = () => {
         >
           <DontMissWrapper data={WhoApplyData} />
         </ReusableSection>
-        {/* <ReusableSection
+        <ReusableSection
           header={partnerContent.header}
           keywords={partnerContent.keywords}
           text={partnerContent.text}
@@ -197,7 +197,7 @@ const PitchPageWrapper = () => {
           buttonData={partnerContent.buttonData}
         >
           <SponsorsWrapper />
-        </ReusableSection> */}
+        </ReusableSection>
         <ReusableSection
           header={joinContent.header}
           keywords={joinContent.keywords}

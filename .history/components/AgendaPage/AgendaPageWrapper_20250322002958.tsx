@@ -61,15 +61,15 @@ const AgendaPageWrapper = () => {
 
   
 
-  // const partnerContent = {
-  //   header: "Partners & Sponsors",
-  //   keywords: ["Partners", "&", "Sponsors"],
-  //   text: "Showcasing our valued partners and sponsors who play a key role in supporting and enhancing our initiatives.",
-  //   buttonData: {
-  //     name: "Partner with us",
-  //     link: "/partners",
-  //   },
-  // };
+  const partnerContent = {
+    header: "Partners & Sponsors",
+    keywords: ["Partners", "&", "Sponsors"],
+    text: "Showcasing our valued partners and sponsors who play a key role in supporting and enhancing our initiatives.",
+    buttonData: {
+      name: "Partner with us",
+      link: "/partners",
+    },
+  };
 
   const joinContent = {
     header: "Join the Movement",
@@ -116,7 +116,7 @@ const AgendaPageWrapper = () => {
         </ReusableSection>
         <PaddingTop backgroundColor="#FFF6ED" />
         <SloganBanner />
-        {/* <ReusableSection
+        <ReusableSection
           header={partnerContent.header}
           keywords={partnerContent.keywords}
           text={partnerContent.text}
@@ -125,7 +125,7 @@ const AgendaPageWrapper = () => {
           buttonData={partnerContent.buttonData}
         >
           <SponsorsWrapper />
-        </ReusableSection> */}
+        </ReusableSection>
         <ReusableSection
           header={joinContent.header}
           keywords={joinContent.keywords}

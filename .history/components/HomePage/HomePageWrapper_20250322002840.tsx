@@ -14,7 +14,7 @@ import SpeakerWrapper from "../ReUsables/SpeakerWrapper";
 import OpportunityWrapper from "../ReUsables/OpportunityWrapper";
 import VenueWrapper from "../ReUsables/VenueWrapper";
 import CountDown from "../ReUsables/CountDown";
-// import SponsorsWrapper from "../ReUsables/SponsorsWrapper";
+import SponsorsWrapper from "../ReUsables/SponsorsWrapper";
 import JoinWrapper from "../ReUsables/JoinWrapper";
 import FAQSection from "../ReUsables/FAQSection";
 import AgendaWrapper from "../ReUsables/AgendaWrapper";
@@ -113,15 +113,15 @@ const HomePageWrapper = () => {
     },
   };
 
-  // const partnerContent = {
-  //   header: " Partners & Sponsors",
-  //   keywords: ["Partners", "&", "Sponsors"],
-  //   text: "Showcasing our valued partners and sponsors who play a key role in supporting and enhancing our initiatives.",
-  //   buttonData: {
-  //     name: "Partner with us",
-  //     link: "/partners",
-  //   },
-  // };
+  const partnerContent = {
+    header: " Partners & Sponsors",
+    keywords: ["Partners", "&", "Sponsors"],
+    text: "Showcasing our valued partners and sponsors who play a key role in supporting and enhancing our initiatives.",
+    buttonData: {
+      name: "Partner with us",
+      link: "/partners",
+    },
+  };
 
   const joinContent = {
     header: "Join the Movement",

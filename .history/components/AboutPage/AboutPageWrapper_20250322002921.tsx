@@ -1,27 +1,26 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Lenis from "lenis";
 import Footer from "../Navigation/Footer";
 import Preloader from "../Navigation/Preloader";
 import HeroSection from "../ReUsables/HeroSection";
 import VenueBanner from "../ReUsables/VenueBanner";
-import ReusableSection from "../ReUsables/ReusableSection";
-import AttendForm from "./AttendForm";
-import Navbar from "../Navigation/Navbar";
-import OpportunityWrapper from "../ReUsables/OpportunityWrapper";
 import SloganBanner from "../ReUsables/SloganBanner";
-import PaddingTop from "../ReUsables/PaddingTop";
+import ReusableSection from "../ReUsables/ReusableSection";
+import AboutboxWrapper from "../ReUsables/AboutboxWrapper";
+import DontMissWrapper from "../ReUsables/DontMissWrapper";
+import VenueWrapper from "../ReUsables/VenueWrapper";
+import QuickStoryWrapper from "./QuickStoryWrapper";
+import { AboutData, DontMissData, JoinData } from "@/utils";
 import CountDown from "../ReUsables/CountDown";
-// import SponsorsWrapper from "../ReUsables/SponsorsWrapper";
-import FAQSection from "../ReUsables/FAQSection";
+import SponsorsWrapper from "../ReUsables/SponsorsWrapper";
 import JoinWrapper from "../ReUsables/JoinWrapper";
-import { JoinData } from "@/utils";
+import Navbar from "../Navigation/Navbar";
+import FAQSection from "../ReUsables/FAQSection";
+import PaddingTop from "../ReUsables/PaddingTop";
 
-const AttendPageWrapper = () => {
-  const [lenis, setLenis] = useState<Lenis | null>(null);
-  const formRef = useRef<HTMLDivElement | null>(null);
-
+const AboutPageWrapper = () => {
   useEffect(() => {
     const lenisInstance = new Lenis({
       duration: 1,
@@ -33,43 +32,61 @@ const AttendPageWrapper = () => {
     }
 
     requestAnimationFrame(raf);
-
-    // Store the lenis instance in state
-    setLenis(lenisInstance);
   }, []);
 
   const HeroContent = {
-    largeText: "Attend ILID 2025 and be part of the change",
+    largeText: "Connecting, Innovating and Creating",
     normalText:
-      "It's where ambitious students, industry experts, visionary leaders, and impactful organizations to create sustainable solutions for our communities.",
+      "ILID 2025 brings together visionaries from various sectors to collaborate and create lasting change.",
     buttonProps: {
       name: "Secure my spot",
+      link: "/attend",
     },
   };
 
   const HeroBreakpoints = {
     lg: "80vh",
     nm: "90vh",
-    md: "60vh",
-    sm: "78vh",
-    smm: "87vh",
-    smmm: "92vh",
+    md: "55vh",
+    sm: "72vh",
+    smm: "80vh",
+    smmm: "84vh",
   };
 
-  const formContent = {
-    header: "Secure your spot at ILID 2025",
-    keywords: ["Secure"],
-    text: "Join us in reshaping Cameroon's infrastructure for a sustainable future. Fill out the form below to secure your place at ILID 2025.",
-  };
-
-  const opportunityContent = {
-    header: "Unlock New Opportunities",
-    keywords: ["Unlock"],
-    text: "ILID offers a unique opportunity to be part of a transformative initiative aimed at reshaping Cameroon's infrastructure. By attending, you'll gain from:",
+  const aboutContent = {
+    header: "About ILID 2025",
+    keywords: ["About"],
+    text: "ILID 2025 is a groundbreaking four day event tackling critical infrastructure challenges in our communities. By empowering STEM students and young professionals, ILID fosters innovative solutions for sustainable development and resilience.",
     buttonData: {
-      name: "Explore the agenda",
-      link: "/agenda",
+      name: "Secure my spot at ILID 2025",
+      link: "/attend",
     },
+  };
+
+  const quickContent = {
+    header: "Quick Story behind ILID",
+    keywords: ["Quick", "Story"],
+    text: "A movement that engages the innovative spirit and drive of young Cameroonians to produce sustainable and practical solutions for critical problems.",
+    buttonData: {
+      name: "Secure my spot at ILID 2025",
+      link: "/attend",
+    },
+  };
+
+  const missContent = {
+    header: "Don't Miss Out on ILID 2025",
+    keywords: ["Don't", "Miss", "Out"],
+    text: "Gain insights, network with top professionals, and be part of a movement driving sustainable progress.",
+    buttonData: {
+      name: "Secure my spot at ILID 2025",
+      link: "/attend",
+    },
+  };
+
+  const venueContent = {
+    header: "ILID 2025 event venue",
+    keywords: ["ILID", "2025"],
+    text: "Join us at National Advanced School of Public Works for an immersive and transformative ILID experience.",
   };
 
   const countDownContent = {
@@ -77,13 +94,13 @@ const AttendPageWrapper = () => {
     keywords: [],
     text: "Stay tuned as we count down to the ILID 2025, where innovation and collaboration meet for impact.",
     buttonData: {
-      name: "Pitch my idea at ILID 2025",
-      link: "/pitch-contest",
+      name: "Secure my spot at ILID 2025",
+      link: "/attend",
     },
   };
 
   // const partnerContent = {
-  //   header: " Partners & Sponsors",
+  //   header: "Partners & Sponsors",
   //   keywords: ["Partners", "&", "Sponsors"],
   //   text: "Showcasing our valued partners and sponsors who play a key role in supporting and enhancing our initiatives.",
   //   buttonData: {
@@ -97,9 +114,9 @@ const AttendPageWrapper = () => {
     keywords: ["Join"],
     text: "Be part of ILID 2025. Collaborate, Share insights, and Pitch transformative ideas to drive sustainable development and innovation forward.",
     buttonData: {
-      name: "About ILID 2025",
-      link: "/about",
-      // buttonText: "Empowering change through innovation.",
+      name: "Secure my spot at ILID 2025",
+      link: "/attend",
+      buttonText: "Join us to explore, learn, and connect at ILID 2025.",
     },
   };
 
@@ -122,34 +139,49 @@ const AttendPageWrapper = () => {
         }}
       >
         <Navbar animationFinished={animationFinished}/>
-        <HeroSection
-          herocontent={HeroContent}
-          breakpoints={HeroBreakpoints}
-          lenis={lenis}
-          reference={formRef}
-        />
+        <HeroSection herocontent={HeroContent} breakpoints={HeroBreakpoints} />
         <VenueBanner />
         <ReusableSection
-          header={formContent.header}
-          keywords={formContent.keywords}
-          text={formContent.text}
+          header={aboutContent.header}
+          keywords={aboutContent.keywords}
+          text={aboutContent.text}
           textColor="#000000"
           backgroundColor="#FFF6ED"
-          ref={formRef}
+          buttonData={aboutContent.buttonData}
         >
-          <AttendForm />
+          <AboutboxWrapper data={AboutData} />
+        </ReusableSection>
+        <ReusableSection
+          header={quickContent.header}
+          keywords={quickContent.keywords}
+          text={quickContent.text}
+          textColor="#000000"
+          backgroundColor="#FFF6ED"
+          buttonData={quickContent.buttonData}
+        >
+          <QuickStoryWrapper />
         </ReusableSection>
         <PaddingTop backgroundColor="#FFF6ED" />
         <SloganBanner />
+        <PaddingTop backgroundColor="#FFF6ED" />
         <ReusableSection
-          header={opportunityContent.header}
-          keywords={opportunityContent.keywords}
-          text={opportunityContent.text}
+          header={missContent.header}
+          keywords={missContent.keywords}
+          text={missContent.text}
           textColor="#000000"
           backgroundColor="#FFF6ED"
-          buttonData={opportunityContent.buttonData}
+          buttonData={missContent.buttonData}
         >
-          <OpportunityWrapper />
+          <DontMissWrapper data={DontMissData} />
+        </ReusableSection>
+        <ReusableSection
+          header={venueContent.header}
+          keywords={venueContent.keywords}
+          text={venueContent.text}
+          textColor="#000000"
+          backgroundColor="#FFF6ED"
+        >
+          <VenueWrapper />
         </ReusableSection>
         <PaddingTop backgroundColor="#FFF6ED" />
         <PaddingTop backgroundColor="#C24002" />
@@ -194,10 +226,10 @@ const AttendPageWrapper = () => {
         >
           <FAQSection />
         </ReusableSection>
-        <Footer/>
+        <Footer />
       </div>
     </>
   );
 };
 
-export default AttendPageWrapper;
+export default AboutPageWrapper;
