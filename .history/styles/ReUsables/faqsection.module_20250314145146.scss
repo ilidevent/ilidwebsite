@@ -1,0 +1,33 @@
+.faqwrapper{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.accordion__item{
+  width: 100%;
+  width: 100%;
+  height: auto;
+  border: 2px solid rgba(0,0,0,0.3);
+  border-radius: 15px;
+}
+
+.a__header{
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p__tag{
+  font-size: calc(var(--normal-font-size) + 0.2rem);
+}
+
+.svg{
+  width: 25px;
+  height: 25px;
+  max-height: 25px;
+  position: relative;
+}

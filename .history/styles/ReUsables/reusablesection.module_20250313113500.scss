@@ -1,0 +1,23 @@
+.rs__content{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.rs__container{
+  height: max-content;
+}
+
+.
+
+.rscontent__header{
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  p{
+    width: 50%;
+    text-align: center;
+  }
+}

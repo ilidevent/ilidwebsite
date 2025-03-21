@@ -1,0 +1,1 @@
+import IMAGE1 from "../public/svg/summit.svg"

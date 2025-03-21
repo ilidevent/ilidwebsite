@@ -1,0 +1,38 @@
+.nav__header{
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+}
+
+.nav__container{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo{
+  width: 300px;
+  aspect-ratio: 1112.0159/400;
+  position: relative;
+
+  img{
+    object-fit: cover;
+  }
+}
+
+.nav__center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 1.5rem;
+  transition: color 0.7s ease;
+
+  &:h
+
+  a{
+    color: var(--body-color);
+  }
+}

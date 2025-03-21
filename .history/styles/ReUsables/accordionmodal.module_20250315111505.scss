@@ -1,0 +1,31 @@
+.modal__wrapper{
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  // visibility: hidden;
+  // opacity: 0;
+  backdrop-filter: blur(2px);
+  // pointer-events: none;
+  overflow: hidden;
+  transition: all 0.7s linear;
+
+  &.active__modal {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.am__wrapper{
+  width: 80%;
+  aspect-ratio: 16/8.5;
+  background-color: var(--body-color);
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max
+}

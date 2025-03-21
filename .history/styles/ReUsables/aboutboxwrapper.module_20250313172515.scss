@@ -1,0 +1,30 @@
+.abw__wrapper{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+.obw__wrapper{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sbw__wrapper{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  .work__buttons{
+    width: max-content;
+    padding: 0.5rem;
+    border: 1px solid var(--body-color);
+    display: flex;
+    gap: 0.5rem;
+    border-radius: 50px;
+  }
+}

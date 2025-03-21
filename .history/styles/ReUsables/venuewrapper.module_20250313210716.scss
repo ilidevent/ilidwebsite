@@ -1,0 +1,18 @@
+.venue__wrapper{
+  width: 100%;
+  aspect-ratio: 16/8;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.venue__main{
+  width: 70%;
+  height: 100%;
+  position: relative;
+}
+
+.venue__right{
+  width: 100;
+}

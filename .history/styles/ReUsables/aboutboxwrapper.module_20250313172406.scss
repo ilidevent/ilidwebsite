@@ -1,0 +1,26 @@
+.abw__wrapper{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+.obw__wrapper{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sbw__wrapper{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  .work__buttons{
+    width: max-content;
+    padding: 3;
+  }
+}

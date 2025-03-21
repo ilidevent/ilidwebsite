@@ -1,0 +1,8 @@
+.countdown__wrapper{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+}
+
+.count__wrapper

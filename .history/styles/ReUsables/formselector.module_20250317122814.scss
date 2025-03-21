@@ -1,0 +1,30 @@
+.select__wrapper{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+.flabel{
+  font-size: calc(var(--normal-font-size) + 0.1rem);
+  text-transform: none;
+}
+
+.finput {
+  width: 100%;
+  position: relative;
+  height: 70px;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.selection{
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: var(--text-color-light);
+}

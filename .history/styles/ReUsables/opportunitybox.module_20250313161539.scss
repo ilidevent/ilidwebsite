@@ -1,0 +1,76 @@
+.obox__wrapper{
+  width: 100%;
+  aspect-ratio: 550/700;
+  position: relative;
+  padding: 2.5rem 1.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid var(--orange);
+}
+
+.ob__content{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  gap: 1rem;
+
+  span{
+    font-size: var(--h2-font-size);
+    line-height: 1.1;
+  }
+
+  p{
+    color: var(--text-color-light);
+    width: 100%;
+  }
+}
+
+.obimage__wrapper{
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.ob__image{
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  img{
+    object-fit: cover;
+  }
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(255, 91, 0, 0.15);
+}
+
+.button__fill{
+  padding: 0.7rem 1.5rem;
+  border-radius: 100px;
+  background-color: var(--orange);
+  color: var(--body-color);
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
+  position: absolute;
+  
+
+  &:hover{
+    border: 1px solid var(--body-color);
+    background-color: transparent;
+  }
+}

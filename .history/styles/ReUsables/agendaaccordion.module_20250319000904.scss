@@ -1,0 +1,249 @@
+.aa__wrapper {
+  width: 100%;
+  height: auto;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateX(20%);
+  opacity: 0;
+
+  &.oactive {
+    border: 1px solid var(--orange) !important;
+
+    .aaw__left {
+      .aw__separator {
+        background-color: var(--orange) !important;
+      }
+
+      svg {
+        path {
+          fill: #fd965e !important;
+        }
+      }
+
+      .aw__text {
+        color: var(--orange) !important;
+      }
+    }
+
+    .aaw__right {
+      .arl__text {
+        color: var(--orange) !important;
+      }
+
+      .break__p {
+        color: var(--orange) !important;
+      }
+
+      .awr__right {
+        span {
+          color: var(--orange) !important;
+
+          &:hover {
+            border: 1px solid var(--orange);
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+.aaw__left {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.al__date {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--orange);
+}
+
+.aw__day {
+  font-size: calc(var(--normal-font-size) + 0.8rem);
+  line-height: 1;
+}
+
+.aw__date {
+  font-size: calc(var(--normal-font-size) + 2.5rem);
+  line-height: 1;
+}
+
+.aw__separator {
+  width: 1px;
+  height: 110px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.aw__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.aw__infoone {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.aw__svg {
+  width: 25px;
+  height: 25px;
+  position: relative;
+
+  &.location {
+    svg {
+      width: 29px;
+      height: 29px;
+    }
+  }
+
+  svg {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    path {
+      fill: rgba(0, 0, 0, 0.4) !important;
+    }
+  }
+}
+
+.aaw__right {
+  width: 67%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.awr__left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.arl__text {
+  font-size: calc(var(--normal-font-size) + 0.2rem);
+  font-family: var(--medium-font);
+}
+
+.break__p {
+  font-size: calc(var(--normal-font-size) + 0.5rem);
+  text-transform: uppercase;
+  font-family: var(--medium-font);
+}
+
+.speaker__images {
+  display: flex;
+  gap: 0;
+  align-items: center;
+  position: relative;
+}
+
+.speaker__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--body-color);
+  margin-left: -8px;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+  }
+
+  &:nth-of-type(1) {
+    margin-left: 0;
+  }
+}
+
+.awr__right {
+  width: max-content;
+  height: max-content;
+  margin-top: 0.7rem;
+
+  span {
+    padding: 0.7rem 1.5rem;
+    border-radius: 70px;
+    border: 1px solid transparent;
+    background-color: #ffe5cd;
+    color: black;
+    cursor: pointer;
+    transition: all 0.7s ease;
+
+    &:hover {
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      background-color: transparent;
+    }
+  }
+}
+
+//Responsive Design
+@media screen and (max-width: 1250px) {
+  .aaw__right {
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .aaw__right {
+    width: 60%;
+  }
+
+  .aa__wrapper {
+    padding: 1rem 1.2rem;
+    border-radius: 15px;
+  }
+
+  .aaw__left {
+    gap: 1rem;
+  }
+
+  .al__date {
+    gap: 0.3rem;
+  }
+
+  .aw__separator {
+    height: 95px;
+  }
+
+  .aw__day {
+    font-size: calc(var(--normal-font-size) + 0.4rem);
+  }
+
+  .aw__date {
+    font-size: calc(var(--normal-font-size) + 2rem);
+  }
+
+  .aw__details {
+    gap: 1rem;
+  }
+
+  .awr__right {
+    margin-top: 0.7rem;
+  
+    span {
+      padding: 0.5rem 1.2rem;
+      border-radius: 70px;
+    }
+  }
+
+  .arl__text {
+    font-size: calc(var(--normal-font-size) + 0.2rem);
+    font-family: var(--medium-font);
+  }
+}

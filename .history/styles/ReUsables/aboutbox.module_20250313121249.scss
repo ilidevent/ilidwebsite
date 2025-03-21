@@ -1,0 +1,20 @@
+.aboutbox{
+  width: 100%;
+  aspect-ratio: 1/0.9;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--orange);
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 91, 0, 0.80) 20%, rgba(255, 91, 0, 0.00) 100%);
+}
+
+.aboutb__image{
+  position: relative;
+  width: 200px;
+  aspect-ratio: 387.5811/400;
+
+  img{
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,12 @@
+.partner__container{
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 2rem;
+  column-gap: 1rem;
+}
+
+.partner__wrapper{
+  
+}

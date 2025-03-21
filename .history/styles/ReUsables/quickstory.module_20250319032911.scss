@@ -1,0 +1,23 @@
+.qs__wrapper{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+//Responsive Design
+@media screen and (max-width: 1200px) {
+  .qs__wrapper{
+    width: 85%;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .qs__wrapper{
+    width: 100%;
+    gap: 1.3rem;
+  }
+}
+

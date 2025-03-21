@@ -1,0 +1,7 @@
+.select__wrapper{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem; //1rem -0.2rem(margin of error message)
+}

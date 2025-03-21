@@ -1,0 +1,35 @@
+.aa__wrapper{
+  width: 100%;
+  height: auto;
+  padding: 1rem 2rem;
+  border: 2px solid rgba(0,0,0,0.5);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aaw__left{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  align-items: flex-start;
+}
+
+.al__date{
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--orange);
+  font-family: var(--medium-font);
+}
+
+.aw__day{
+  font-size: calc(var(--normal-font-size) + 0.5rem);
+}
+
+.aw__date{
+  font-size: calc(var(--normal-font-size) + 2rem);
+}

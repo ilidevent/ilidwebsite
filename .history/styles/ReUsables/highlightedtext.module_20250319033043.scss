@@ -1,0 +1,43 @@
+.large__text{
+  font-size: calc(var(--h2-font-size) + 0.6rem);
+}
+
+.phrase__text{
+  font-size: calc(var(--normal-font-size) + 0.6rem);
+  text-align: justify;
+}
+
+
+
+//Responsive Design
+@media screen and (max-width: 1088px ) {
+  .large__text{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .phrase__text{
+    font-size: calc(var(--normal-font-size) + 0.4rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .phrase__text{
+    font-size: calc(var(--normal-font-size) + 0.3rem);
+    line-height: 1.25;
+  }
+}
+
+@media screen and (max-width: 670px ) {
+  .large__text{
+    font-size: calc(var(--h2-font-size) + 0.4rem);
+  }
+}
+
+@media screen and (max-width: 570px ) {
+  .large__text{
+    font-size: calc(var(--h2-font-size) + 0.2rem);
+    line-height: 1.12;
+  }
+}

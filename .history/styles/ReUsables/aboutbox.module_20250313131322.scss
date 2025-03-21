@@ -1,0 +1,71 @@
+.abox__wrapper{
+  position: relative;
+}
+
+.aboutbox{
+  width: 100%;
+  aspect-ratio: 1/0.9;
+  border: 1px solid var(--orange);
+  border-radius: 20px;
+  background-color: var(--body-color);
+  z-index: 2;
+  position: relative;
+
+}
+
+.aboutboxer{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 2rem 2rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(255, 91, 0, 0.80) 20%, rgba(255, 91, 0, 0.00) 100%);
+}
+
+.aboutb__image{
+  position: relative;
+  height: 220px;
+
+  img{
+    object-fit: cover;
+  }
+}
+
+.about__content{
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.7rem;
+
+  span{
+    font-size: calc(var(--normal-font-size) + 0.3rem);
+    font-family: var(--medium-font);
+  }
+
+  p{
+    text-align: center;
+    color: var(--text-color-light);
+  }
+}
+
+.animation, .animationtwo{
+    position: absolute;
+    width: calc(100%  + 4px);
+    height: calc(100%  + 4px);
+    background-image: conic-gradient(transparent 70%, var(--orange));
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 20px;
+    an
+}
+
+.animationtwo{
+  filter: blur(1rem);
+  opacity: 0.5;
+}

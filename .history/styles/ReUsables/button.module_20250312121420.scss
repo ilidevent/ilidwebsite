@@ -1,0 +1,29 @@
+.button__background{
+  padding: 0.7rem 1.5rem;
+  border-radius: 100px;
+  background-color: var(--body-color);
+  color: var(--orange);
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
+
+  &:hover{
+    border: 1px solid var(--body-color);
+    color: var(--body-color);
+    background-color: transparent;
+  }
+}
+
+.button__stroke{
+  padding: 0.7rem 1.5rem;
+  border-radius: 100px;
+  background-color: var(--body-color);
+  color: var(--orange);
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
+
+  &:hover{
+    border: 1px solid var(--body-color);
+    color: var(--body-color);
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,19 @@
+.countdown__wrapper{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+}
+
+.count__wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--body-color);
+  font-family: var(--script-font);
+}
+
+.count__box{
+  
+}

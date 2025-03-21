@@ -1,0 +1,31 @@
+.countdown__wrapper{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+}
+
+.count__wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--body-color);
+  font-family: var(--script-font);
+}
+
+.count__box{
+  font-size: calc(var(--h2-font-size) + 4rem);
+  width: 100%;
+  height: 200px;
+  border: 1px solid var(--body-color);
+  border-radius: 100px;
+  position: relative;
+
+  span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

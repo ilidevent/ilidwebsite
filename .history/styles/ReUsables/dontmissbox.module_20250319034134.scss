@@ -1,0 +1,43 @@
+.dmb__wrapper{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.dmw__image{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 100%;
+
+  img{
+    object-fit: cover;
+  }
+}
+
+.dm__text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  span{
+    font-size: calc(var(--h2-font-size) - 0.2rem);
+    text-align: center;
+  }
+
+  p{
+    color: var(--text-color-light);
+    text-align: center;
+    width: 80%;
+    font-size: calc(var(--normal-font-size))
+  }
+}
+
+@media screen amd  {
+  
+}

@@ -1,0 +1,107 @@
+.nav__header {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 270px;
+  aspect-ratio: 1112.0159/400;
+  position: relative;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.nav__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 1.5rem;
+
+  a {
+    color: var(--body-color);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.nav__right {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.menu__wrapper {
+  padding: 1rem 0.1rem;
+  cursor: pointer;
+  position: relative;
+  display: none;
+  align-items: center;
+  gap: 0.2rem;
+
+
+  .menu__icons {
+    position: relative;
+    width: max-content;
+    cursor: pointer;
+
+    .span__icon {
+      display: block;
+      width: 40px;
+      height: 0.1rem;
+      background-color: var(--body-color);
+      cursor: pointer;
+
+      &:nth-last-of-type(1) {
+        position: relative;
+        tra
+        margin-top: -7px;
+      }
+
+      &:nth-last-of-type(1) {
+        margin-bottom: -7px;
+      }
+    }
+  }
+
+  .menuu{
+    color: var(--body-color);
+  }
+}
+
+
+//Responsive Design
+@media screen and (max-width: 1230px) {
+  .pitch__button{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__center{
+    display: none;
+  }
+
+  .menu__wrapper{
+    display: flex;
+  }
+}
