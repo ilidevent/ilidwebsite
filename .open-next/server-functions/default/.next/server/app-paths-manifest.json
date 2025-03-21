@@ -1,0 +1,16 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/opengraph-image.jpg/route": "app/opengraph-image.jpg/route.js",
+  "/pitch-contest/opengraph-image.jpg/route": "app/pitch-contest/opengraph-image.jpg/route.js",
+  "/page": "app/page.js",
+  "/attend/page": "app/attend/page.js",
+  "/partners/page": "app/partners/page.js",
+  "/pitch-contest/page": "app/pitch-contest/page.js",
+  "/speakers/page": "app/speakers/page.js",
+  "/team/page": "app/team/page.js",
+  "/about/page": "app/about/page.js",
+  "/agenda/page": "app/agenda/page.js"
+}

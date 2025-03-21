@@ -1,0 +1,6 @@
+name = "frontend"
+compatibility_date = "2025-03-21"
+compatibility_flags = ["nodejs_compat"]
+
+main = ".worker-next/index.mjs"
+assets = { directory = ".worker-next/assets"}
