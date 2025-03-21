@@ -227,14 +227,14 @@
 
 @media screen and (max-width: 430px) and (max-height: 770px) {
   .hero__section {
-    height: calc(var(--smmm) - 90vh)
+    height: calc(var(--smmm) - 5rem)
   }
 }
 
 
 @media screen and (max-width: 430px) and (max-height: 730px) {
   .hero__section {
-    height: calc(var(--smmm) - 40vh)
+    height: calc(var(--smmm) - 3rem)
   }
 
   .large__text {
@@ -252,7 +252,7 @@
   }
 
   .hero__section {
-    height: calc(var(--smmm) - 5vh);
+    height: calc(var(--smmm) - 3vh);
   }
 }
 
