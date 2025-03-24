@@ -55,8 +55,8 @@ const AttendPageWrapper = () => {
     nm: "95vh",
     md: "63vh",
     sm: "81vh",
-    smm: "92vh",
-    smmm: "97vh",
+    smm: "90vh",
+    smmm: "9vh",
   };
 
   // const formContent = {

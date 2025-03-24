@@ -48,7 +48,7 @@ const PitchPageWrapper = () => {
   const HeroBreakpoints = {
     lg: "82vh",
     nm: "92vh",
-    md: "59vh",
+    md: "57vh",
     sm: "72vh",
     smm: "82vh",
     smmm: "87vh",

@@ -55,7 +55,7 @@ const AttendPageWrapper = () => {
     nm: "95vh",
     md: "63vh",
     sm: "81vh",
-    smm: "92vh",
+    smm: "90vh",
     smmm: "97vh",
   };
 

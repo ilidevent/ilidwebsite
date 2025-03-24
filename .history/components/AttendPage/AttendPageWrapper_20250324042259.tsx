@@ -52,11 +52,11 @@ const AttendPageWrapper = () => {
 
   const HeroBreakpoints = {
     lg: "84vh",
-    nm: "95vh",
+    nm: "93vh",
     md: "63vh",
     sm: "81vh",
-    smm: "92vh",
-    smmm: "97vh",
+    smm: "90vh",
+    smmm: "95vh",
   };
 
   // const formContent = {
