@@ -2,21 +2,23 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import Lenis from "lenis";
-import ReusableSection from "../ReUsables/ReusableSection";
-import Preloader from "../Navigation/Preloader";
 import Footer from "../Navigation/Footer";
-import { WhySponsorData, JoinDataThree } from "@/utils";
-import SloganBanner from "../ReUsables/SloganBanner";
+import Preloader from "../Navigation/Preloader";
 import HeroSection from "../ReUsables/HeroSection";
+import VenueBanner from "../ReUsables/VenueBanner";
+import ReusableSection from "../ReUsables/ReusableSection";
+// import AttendForm from "./AttendForm";
+import Navbar from "../Navigation/Navbar";
+import OpportunityWrapper from "../ReUsables/OpportunityWrapper";
+import SloganBanner from "../ReUsables/SloganBanner";
+import PaddingTop from "../ReUsables/PaddingTop";
+import CountDown from "../ReUsables/CountDown";
 // import SponsorsWrapper from "../ReUsables/SponsorsWrapper";
 import FAQSection from "../ReUsables/FAQSection";
 import JoinWrapper from "../ReUsables/JoinWrapper";
-import Navbar from "../Navigation/Navbar";
-import PartnersForm from "./PartnersForm";
-import VenueBanner from "../ReUsables/VenueBanner";
-import PaddingTop from "../ReUsables/PaddingTop";
+import { JoinData } from "@/utils";
 
-const PartnersPageWrapper = () => {
+const AttendPageWrapper = () => {
   const [lenis, setLenis] = useState<Lenis | null>(null);
   const formRef = useRef<HTMLDivElement | null>(null);
 
@@ -37,21 +39,51 @@ const PartnersPageWrapper = () => {
   }, []);
 
   const HeroContent = {
-    largeText: "Sponsor or Partner at ILID 2025",
+    largeText: "Attend ILID 2025 and be part of the change",
     normalText:
-      "Sponsor or Partner with us to ignite innovation, empower emerging leaders, and create resilient, future-ready communities in Cameroon.",
+      "It's where ambitious students, industry experts, visionary leaders, and impactful organizations to create sustainable solutions for our communities.",
+    buttonText: "Fill out this form to register for the summit",
     buttonProps: {
-      name: "Partner with us",
+      name: "Register for summit",
+      link: "https://shorturl.at/svuGE",
+      target: "_blank",
     },
   };
 
-  const whyContent = {
-    header: "Why Sponsor or Partner at ILID 2025?",
-    keywords: ["Why"],
-    text: "ILID offers a unique opportunity to be part of a transformative initiative aimed at reshaping Cameroon's infrastructure. By sponsoring or partnering, you'll gain from:",
+  const HeroBreakpoints = {
+    lg: "84vh",
+    nm: "95vh",
+    md: "63vh",
+    sm: "81vh",
+    smm: "94vh",
+    smmm: "97vh",
+  };
+
+  // const formContent = {
+  //   header: "Secure your spot at ILID 2025",
+  //   keywords: ["Secure"],
+  //   text: "Join us in reshaping Cameroon's infrastructure for a sustainable future. Fill out the form below to secure your place at ILID 2025.",
+  // };
+
+  const opportunityContent = {
+    header: "Unlock New Opportunities",
+    keywords: ["Unlock"],
+    text: "ILID offers a unique opportunity to be part of a transformative initiative aimed at reshaping Cameroon's infrastructure. By attending, you'll gain from:",
     buttonData: {
-      name: "Learn more about ILID 2025",
-      link: "/about",
+      name: "Register for summit",
+      link: "https://shorturl.at/svuGE",
+      target: "_blank"
+    },
+  };
+
+  const countDownContent = {
+    header: "Countdown to ILID 2025",
+    keywords: [],
+    text: "Stay tuned as we count down to the ILID 2025, where innovation and collaboration meet for impact.",
+    buttonData: {
+      name: "Register for summit",
+      link: "https://shorturl.at/svuGE",
+      target: "_blank"
     },
   };
 
@@ -59,6 +91,10 @@ const PartnersPageWrapper = () => {
   //   header: " Partners & Sponsors",
   //   keywords: ["Partners", "&", "Sponsors"],
   //   text: "Showcasing our valued partners and sponsors who play a key role in supporting and enhancing our initiatives.",
+  //   buttonData: {
+  //     name: "Partner with us",
+  //     link: "/partners",
+  //   },
   // };
 
   const joinContent = {
@@ -66,10 +102,9 @@ const PartnersPageWrapper = () => {
     keywords: ["Join"],
     text: "Be part of ILID 2025. Collaborate, Share insights, and Pitch transformative ideas to drive sustainable development and innovation forward.",
     buttonData: {
-      name: "Register for summit",
-      link: "https://shorturl.at/svuGE",
-      target: "_blank",
-      buttonText: "Join us to explore, learn, and connect at ILID 2025.",
+      name: "About ILID 2025",
+      link: "/about",
+      // buttonText: "Empowering change through innovation.",
     },
   };
 
@@ -77,21 +112,6 @@ const PartnersPageWrapper = () => {
     header: "Frequently Asked Questions",
     keywords: ["Frequently"],
     text: "Explore our FAQ for essential insights to ensure a successful ILID experience. If your questions aren’t answered here, contact us at ilid.event@gmail.com",
-  };
-
-  const formContent = {
-    header: "Become a Sponsor or Partner",
-    keywords: ["Become"],
-    text: "Empower innovation and drive positive change. Fill out the form to become a sponsor or  partner at ILID 2025.",
-  };
-
-  const HeroBreakpoints = {
-    lg: "80vh",
-    nm: "90vh",
-    md: "55vh",
-    sm: "72vh",
-    smm: "83vh",
-    smmm: "85vh",
   };
 
   //Preloader
@@ -106,7 +126,7 @@ const PartnersPageWrapper = () => {
           overflow: !animationFinished ? "hidden" : "",
         }}
       >
-        <Navbar animationFinished={animationFinished}/>
+        <Navbar animationFinished={animationFinished} />
         <HeroSection
           herocontent={HeroContent}
           breakpoints={HeroBreakpoints}
@@ -114,7 +134,7 @@ const PartnersPageWrapper = () => {
           reference={formRef}
         />
         <VenueBanner />
-        <ReusableSection
+        {/* <ReusableSection
           header={formContent.header}
           keywords={formContent.keywords}
           text={formContent.text}
@@ -122,26 +142,38 @@ const PartnersPageWrapper = () => {
           backgroundColor="#FFF6ED"
           ref={formRef}
         >
-          <PartnersForm />
-        </ReusableSection>
-        <PaddingTop backgroundColor="#FFF6ED" />
-        <SloganBanner />
+          <AttendForm />
+        </ReusableSection> */}
         <ReusableSection
-          header={whyContent.header}
-          keywords={whyContent.keywords}
-          text={whyContent.text}
+          header={opportunityContent.header}
+          keywords={opportunityContent.keywords}
+          text={opportunityContent.text}
           textColor="#000000"
           backgroundColor="#FFF6ED"
-          buttonData={whyContent.buttonData}
+          buttonData={opportunityContent.buttonData}
         >
-          <JoinWrapper joinData={WhySponsorData} />
+          <OpportunityWrapper />
         </ReusableSection>
+        <PaddingTop backgroundColor="#FFF6ED" />
+        <PaddingTop backgroundColor="#C24002" />
+        <ReusableSection
+          header={countDownContent.header}
+          keywords={countDownContent.keywords}
+          text={countDownContent.text}
+          textColor="#FFF6ED"
+          backgroundColor="#C24002"
+          buttonData={countDownContent.buttonData}
+        >
+          <CountDown />
+        </ReusableSection>
+        <PaddingTop backgroundColor="#FFF6ED" />
         {/* <ReusableSection
           header={partnerContent.header}
           keywords={partnerContent.keywords}
           text={partnerContent.text}
           textColor="#000000"
           backgroundColor="#FFF6ED"
+          buttonData={partnerContent.buttonData}
         >
           <SponsorsWrapper />
         </ReusableSection> */}
@@ -153,8 +185,10 @@ const PartnersPageWrapper = () => {
           backgroundColor="#FFF6ED"
           buttonData={joinContent.buttonData}
         >
-          <JoinWrapper joinData={JoinDataThree} />
+          <JoinWrapper joinData={JoinData} />
         </ReusableSection>
+        <PaddingTop backgroundColor="#FFF6ED" />
+        <SloganBanner />
         <ReusableSection
           header={faqContent.header}
           keywords={faqContent.keywords}
@@ -171,4 +205,4 @@ const PartnersPageWrapper = () => {
   );
 };
 
-export default PartnersPageWrapper;
+export default AttendPageWrapper;

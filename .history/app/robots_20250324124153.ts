@@ -6,7 +6,7 @@ export default function robots():MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/partners", "/api/speakers"]
+        disallow: ["/api"]
       }
     ],
     sitemap: "https://ilidevent.com/sitemap.xml"

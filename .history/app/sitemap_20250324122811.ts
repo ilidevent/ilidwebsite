@@ -12,11 +12,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: "https://ilidevent.com/pitch-contest",
-      priority: 0.8,
+      priority: 0.6,
     },
     {
       url: "https://ilidevent.com/about",
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: "https://ilidevent.com/partners",
