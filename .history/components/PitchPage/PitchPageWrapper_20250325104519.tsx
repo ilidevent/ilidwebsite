@@ -60,7 +60,7 @@ const PitchPageWrapper = () => {
     text: "Participants are invited to delve deep into the critical areas affecting our communities. Application ends April 12, 2025, at exactly 11:59 pm",
     buttonData: {
       name: "Apply for Innovation Lab",
-      link: "https://shorturl.at/aWyw7",
+      link: "https://shorturl.at/UNNe5",
       target: "_blank"
     },
   };
@@ -71,7 +71,7 @@ const PitchPageWrapper = () => {
     text: "Calling all passionate STEM students ready to drive community transformation. Application ends April 12, 2025, at exactly 11:59 pm",
     buttonData: {
       name: "Apply for Innovation Lab",
-      link: "https://shorturl.at/aWyw7",
+      link: "https://shorturl.at/UNNe5",
       target: "_blank"
     },
   };
@@ -92,7 +92,7 @@ const PitchPageWrapper = () => {
     text: "Be part of ILID 2025. Collaborate, Share insights, and Pitch transformative ideas to drive sustainable development and innovation forward.",
     buttonData: {
       name: "Apply for Innovation Lab",
-      link: "https://shorturl.at/aWyw7",
+      link: "https://shorturl.at/UNNe5",
       target: "_blank"
     },
   };
@@ -103,7 +103,7 @@ const PitchPageWrapper = () => {
     text: "Discover if you’re ready to join us and reshape Cameroon’s infrastructure landscape with your innovation.",
     buttonData: {
       name: "Apply for Innovation Lab",
-      link: "https://shorturl.at/aWyw7",
+      link: "https://shorturl.at/UNNe5",
       target: "_blank"
     },
   };
@@ -114,7 +114,7 @@ const PitchPageWrapper = () => {
     text: "Be part of ILID 2025. Collaborate, Share insights, and Pitch transformative ideas to drive sustainable development and innovation forward.",
     buttonData: {
       name: "Apply for Innovation Lab",
-      link: "https://shorturl.at/aWyw7",
+      link: "https://shorturl.at/UNNe5",
       target: "_blank"
     },
   };

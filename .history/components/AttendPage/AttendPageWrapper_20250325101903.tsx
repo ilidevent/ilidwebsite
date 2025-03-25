@@ -2,22 +2,23 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import Lenis from "lenis";
-import HeroSection from "../ReUsables/HeroSection";
-import PaddingTop from "../ReUsables/PaddingTop";
-import SpeakerWrapper from "../ReUsables/SpeakerWrapper";
-import VenueBanner from "../ReUsables/VenueBanner";
-import SloganBanner from "../ReUsables/SloganBanner";
-import ReusableSection from "../ReUsables/ReusableSection";
-// import SponsorsWrapper from "../ReUsables/SponsorsWrapper";
-import JoinWrapper from "../ReUsables/JoinWrapper";
-import FAQSection from "../ReUsables/FAQSection";
-import Navbar from "../Navigation/Navbar";
 import Footer from "../Navigation/Footer";
 import Preloader from "../Navigation/Preloader";
-import SpeakerForm from "../SpeakerPage/SpeakerForm";
-import { JoinDataTwo } from "@/utils";
+import HeroSection from "../ReUsables/HeroSection";
+import VenueBanner from "../ReUsables/VenueBanner";
+import ReusableSection from "../ReUsables/ReusableSection";
+// import AttendForm from "./AttendForm";
+import Navbar from "../Navigation/Navbar";
+import OpportunityWrapper from "../ReUsables/OpportunityWrapper";
+import SloganBanner from "../ReUsables/SloganBanner";
+import PaddingTop from "../ReUsables/PaddingTop";
+import CountDown from "../ReUsables/CountDown";
+// import SponsorsWrapper from "../ReUsables/SponsorsWrapper";
+import FAQSection from "../ReUsables/FAQSection";
+import JoinWrapper from "../ReUsables/JoinWrapper";
+import { JoinData } from "@/utils";
 
-const SpeakerPageWrapper = () => {
+const AttendPageWrapper = () => {
   const [lenis, setLenis] = useState<Lenis | null>(null);
   const formRef = useRef<HTMLDivElement | null>(null);
 
@@ -38,34 +39,47 @@ const SpeakerPageWrapper = () => {
   }, []);
 
   const HeroContent = {
-    largeText: "Our 2025 speakers & workshop facilitators lineup",
+    largeText: "Attend ILID 2025 and be part of the change",
     normalText:
-      "Meet the phenomenal speakers who will shape the discussions and drive the quality of talks at ILID 2025.",
+      "It's where ambitious students, industry experts, visionary leaders, and impactful organizations to create sustainable solutions for our communities.",
+    buttonText: "Fill out this form to register for the summit",
     buttonProps: {
-      name: "Become a speaker",
+      name: "Register for summit",
+      link: "https://shorturl.at/svuGE",
+      target: "_blank",
     },
-    buttonText: "Share your expertise and shape the future at ILID 2025.",
   };
 
   const HeroBreakpoints = {
-    lg: "103vh",
-    nm: "105vh",
-    md: "69vh",
-    sm: "88vh",
+    lg: "84vh",
+    nm: "95vh",
+    md: "63vh",
+    sm: "81vh",
     smm: "95vh",
-    smmm: "107vh",
+    smmm: "97vh",
   };
 
-  const formContent = {
-    header: "Speak at ILID 2025",
-    keywords: ["Speak"],
-    text: "Join us by sharing your expertise and inspiring change. Complete the form below to be considered as a speaker at ILID 2025.",
+  // const formContent = {
+  //   header: "Secure your spot at ILID 2025",
+  //   keywords: ["Secure"],
+  //   text: "Join us in reshaping Cameroon's infrastructure for a sustainable future. Fill out the form below to secure your place at ILID 2025.",
+  // };
+
+  const opportunityContent = {
+    header: "Unlock New Opportunities",
+    keywords: ["Unlock"],
+    text: "ILID offers a unique opportunity to be part of a transformative initiative aimed at reshaping Cameroon's infrastructure. By attending, you'll gain from:",
+    buttonData: {
+      name: "Register for summit",
+      link: "https://shorturl.at/svuGE",
+      target: "_blank"
+    },
   };
 
-  const speakersContent = {
-    header: "Unparalleled Perspectives",
+  const countDownContent = {
+    header: "Countdown to ILID 2025",
     keywords: [],
-    text: "Get inspired by emerging voices and industry pioneers as they unite to redefine our community and spark transformative change.",
+    text: "Stay tuned as we count down to the ILID 2025, where innovation and collaboration meet for impact.",
     buttonData: {
       name: "Register for summit",
       link: "https://shorturl.at/zfxQQ",
@@ -88,9 +102,9 @@ const SpeakerPageWrapper = () => {
     keywords: ["Join"],
     text: "Be part of ILID 2025. Collaborate, Share insights, and Pitch transformative ideas to drive sustainable development and innovation forward.",
     buttonData: {
-      name: "See the full program",
-      link: "/agenda",
-      buttonText: "Explore the ILID 2025 agenda and plan your experience.",
+      name: "About ILID 2025",
+      link: "/about",
+      // buttonText: "Empowering change through innovation.",
     },
   };
 
@@ -112,7 +126,7 @@ const SpeakerPageWrapper = () => {
           overflow: !animationFinished ? "hidden" : "",
         }}
       >
-        <Navbar animationFinished={animationFinished}/>
+        <Navbar animationFinished={animationFinished} />
         <HeroSection
           herocontent={HeroContent}
           breakpoints={HeroBreakpoints}
@@ -120,7 +134,7 @@ const SpeakerPageWrapper = () => {
           reference={formRef}
         />
         <VenueBanner />
-        <ReusableSection
+        {/* <ReusableSection
           header={formContent.header}
           keywords={formContent.keywords}
           text={formContent.text}
@@ -128,18 +142,29 @@ const SpeakerPageWrapper = () => {
           backgroundColor="#FFF6ED"
           ref={formRef}
         >
-          <SpeakerForm />
+          <AttendForm />
+        </ReusableSection> */}
+        <ReusableSection
+          header={opportunityContent.header}
+          keywords={opportunityContent.keywords}
+          text={opportunityContent.text}
+          textColor="#000000"
+          backgroundColor="#FFF6ED"
+          buttonData={opportunityContent.buttonData}
+        >
+          <OpportunityWrapper />
         </ReusableSection>
+        <PaddingTop backgroundColor="#FFF6ED" />
         <PaddingTop backgroundColor="#C24002" />
         <ReusableSection
-          header={speakersContent.header}
-          keywords={speakersContent.keywords}
-          text={speakersContent.text}
+          header={countDownContent.header}
+          keywords={countDownContent.keywords}
+          text={countDownContent.text}
           textColor="#FFF6ED"
           backgroundColor="#C24002"
-          buttonData={speakersContent.buttonData}
+          buttonData={countDownContent.buttonData}
         >
-          <SpeakerWrapper />
+          <CountDown />
         </ReusableSection>
         <PaddingTop backgroundColor="#FFF6ED" />
         {/* <ReusableSection
@@ -152,7 +177,6 @@ const SpeakerPageWrapper = () => {
         >
           <SponsorsWrapper />
         </ReusableSection> */}
-        <PaddingTop backgroundColor="#FFF6ED" />
         <ReusableSection
           header={joinContent.header}
           keywords={joinContent.keywords}
@@ -161,7 +185,7 @@ const SpeakerPageWrapper = () => {
           backgroundColor="#FFF6ED"
           buttonData={joinContent.buttonData}
         >
-          <JoinWrapper joinData={JoinDataTwo} />
+          <JoinWrapper joinData={JoinData} />
         </ReusableSection>
         <PaddingTop backgroundColor="#FFF6ED" />
         <SloganBanner />
@@ -181,4 +205,4 @@ const SpeakerPageWrapper = () => {
   );
 };
 
-export default SpeakerPageWrapper;
+export default AttendPageWrapper;

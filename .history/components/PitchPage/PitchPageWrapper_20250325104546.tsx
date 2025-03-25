@@ -114,7 +114,7 @@ const PitchPageWrapper = () => {
     text: "Be part of ILID 2025. Collaborate, Share insights, and Pitch transformative ideas to drive sustainable development and innovation forward.",
     buttonData: {
       name: "Apply for Innovation Lab",
-      link: "https://shorturl.at/aWyw7",
+      link: "https://shorturl.at/UNNe5",
       target: "_blank"
     },
   };

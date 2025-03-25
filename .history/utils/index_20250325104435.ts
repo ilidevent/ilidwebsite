@@ -1076,7 +1076,7 @@ export const FAQData = [
     question: "How do I participate in the Innovation Lab and Pitch Contest?",
     links: [
       { targetWord: "pitch-contest", link: "/pitch-contest" },
-      { targetWord: "(submit here)", link: "https://shorturl.at/aWyw7" },
+      { targetWord: "(submit here)", link: "https://shorturl.at/UNNe5" },
     ],
     answer:
       "To participate in the Innovation Lab, you must submit an application and be selected as part of the top 45 STEM students (submit here). Selected participants will automatically qualify for the Pitch Contest at the end of the Lab. Application details can be found on our pitch-contest page",
