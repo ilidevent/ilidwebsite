@@ -9,7 +9,6 @@ import VenueBanner from "../ReUsables/VenueBanner";
 import ReusableSection from "../ReUsables/ReusableSection";
 // import AttendForm from "./AttendForm";
 import Navbar from "../Navigation/Navbar";
-import VenueWrapper from "../ReUsables/VenueWrapper";
 import OpportunityWrapper from "../ReUsables/OpportunityWrapper";
 import SloganBanner from "../ReUsables/SloganBanner";
 import PaddingTop from "../ReUsables/PaddingTop";
@@ -174,15 +173,6 @@ const AttendPageWrapper = () => {
           <CountDown />
         </ReusableSection>
         <PaddingTop backgroundColor="#FFF6ED" />
-        <ReusableSection
-          header={venueContent.header}
-          keywords={venueContent.keywords}
-          text={venueContent.text}
-          textColor="#000000"
-          backgroundColor="#FFF6ED"
-        >
-          <VenueWrapper />
-        </ReusableSection>
         {/* <ReusableSection
           header={partnerContent.header}
           keywords={partnerContent.keywords}

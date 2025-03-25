@@ -9,7 +9,6 @@ import VenueBanner from "../ReUsables/VenueBanner";
 import ReusableSection from "../ReUsables/ReusableSection";
 // import AttendForm from "./AttendForm";
 import Navbar from "../Navigation/Navbar";
-import VenueWrapper from "../ReUsables/VenueWrapper";
 import OpportunityWrapper from "../ReUsables/OpportunityWrapper";
 import SloganBanner from "../ReUsables/SloganBanner";
 import PaddingTop from "../ReUsables/PaddingTop";
