@@ -366,7 +366,7 @@ export const BenefitsData = [
     image: IMAGE12,
     aspectRatio: "352.3975/400",
     name: "Funding Prizes",
-    text: "1st Prize: XAF 300,000, 2nd Prize: XAF 200,000, 3rd Prize: XAF 100,000",
+    text: "1st Prize: XAF 300,000, 2nd Prize: XAF 200,000, 3rd Prize: XAF 250,000",
   },
 ];
 
