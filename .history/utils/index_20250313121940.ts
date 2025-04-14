@@ -1,1 +1,0 @@
-import SUMMIT from "../public/svg/summit.svg"

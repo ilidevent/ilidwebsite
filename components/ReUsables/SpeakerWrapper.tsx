@@ -12,6 +12,7 @@ const SpeakerWrapper = () => {
   const sectionData = SpeakerData.filter((item) =>
     item.roles.includes(activeButton)
   );
+  
   return (
     <div className={styles.sb__wrapper}>
       <div className={styles.work__buttons}>
