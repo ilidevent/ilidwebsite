@@ -997,7 +997,7 @@ export const FAQData = [
     question: "What are the dates and location of the event?",
     links: [],
     answer:
-      "ILID 2025 will take place from April 25th-27th and 30th, 2025, in Yaoundé, Cameroon. Day One (opening ceremony) and Day Four (closing ceremony) will be held at SINAHA Hotel, while Day Three and Day Four (lab sessions) will take place at MBOA Hub.",
+      "ILID 2025 will take place from April 25th-27th and 30th, 2025, in Yaoundé, Cameroon. The exact venue will be confirmed soon and will be communicated.",
   },
   {
     id: 3,
@@ -1182,7 +1182,7 @@ export const AgendaData = [
       {
         key: "25-12",
         time: "15:15 - 15:30",
-        location: "SINAHA Hotel",
+        llocation: "SINAHA Hotel",
         header: "Presentation of Innovation Lab and Closing remarks",
         title: "Shaping Tomorrow: The Innovation Lab Unveiled",
         details: "This final segment unveils the upcoming Innovation Lab experience—its objectives, structure, and the unique opportunities it offers selected participants. The session will close with reflections from event organizers, celebrating the day’s impact and setting the tone for what’s ahead.",
@@ -1247,7 +1247,7 @@ export const AgendaData = [
       {
         key: "26-5",
         time: "10:45 - 13:00",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Teamwork",
         title: "Problem Framing",
         details:
@@ -1257,7 +1257,7 @@ export const AgendaData = [
       {
         key: "26-6",
         time: "13:00 - 14:00",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Lunch Break",
         title: "Lunch Break",
         details:
@@ -1268,7 +1268,7 @@ export const AgendaData = [
       {
         key: "26-7",
         time: "14:00 - 15:00",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Plenary",
         title: "Problem Framing Teams’ Share Back + Gate Check",
         details:
@@ -1278,7 +1278,7 @@ export const AgendaData = [
       {
         key: "26-8",
         time: "15:00 - 15:30",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Plenary",
         title: "Introduction to Ideation",
         details:
@@ -1288,7 +1288,7 @@ export const AgendaData = [
       {
         key: "26-9",
         time: "15:30 - 17:00",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Plenary",
         title: "Ideation",
         details:
@@ -1298,7 +1298,7 @@ export const AgendaData = [
       {
         key: "26-10",
         time: "17:00 - 17:30",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Plenary",
         title: "Wrap Up Lab Day One",
         details:
@@ -1315,7 +1315,7 @@ export const AgendaData = [
       {
         key: "27-1",
         time: "08:00 - 09:00",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Plenary",
         title: "Problem framing teams’ share back + gate check",
         details: "Teams present their problem statements and receive feedback to align on next steps.",
@@ -1324,7 +1324,7 @@ export const AgendaData = [
       {
         key: "27-2",
         time: "09:00 - 09:20",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Morning Assembly",
         title: "Welcome & recap of Problem Framing & Ideation",
         details: "Review key insights from previous sessions and set the tone for the day ahead.",
@@ -1333,7 +1333,7 @@ export const AgendaData = [
       {
         key: "27-3",
         time: "09:20 - 10:00",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Teamwork",
         title: "Refining problem statement & solution",
         details: "A collaborative session to fine-tune initial problem statements and brainstorm potential solutions.",
@@ -1342,7 +1342,7 @@ export const AgendaData = [
       {
         key: "27-4",
         time: "10:00 - 10:30",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Plenary",
         title: "Introduction to Prototyping",
         details: "An overview of prototyping techniques and tools to transform ideas into tangible models.",
@@ -1351,7 +1351,7 @@ export const AgendaData = [
       {
         key: "27-5",
         time: "10:30 - 12:00",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Teamwork",
         title: "Rapid Prototyping",
         details: "Teams engage in a fast-paced session to quickly bring their ideas to life through prototypes.",
@@ -1360,7 +1360,7 @@ export const AgendaData = [
       {
         key: "27-6",
         time: "12:00 - 13:00",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Lunch Break",
         title: "Lunch Break",
         details: "A pause to refuel and network informally, giving participants time to recharge before upcoming sessions.",
@@ -1370,7 +1370,7 @@ export const AgendaData = [
       {
         key: "27-7",
         time: "13:00 - 13:20",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Plenary",
         title: "Introduction to Pitching",
         details: "Learn key pitching techniques to effectively communicate your innovative ideas and value propositions.",
@@ -1379,7 +1379,7 @@ export const AgendaData = [
       {
         key: "27-8",
         time: "13:20 - 15:20",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Teamwork",
         title: "Refining Prototype & Preparing Pitch",
         details: "Teams refine their prototypes and prepare compelling pitches with expert guidance and collaborative feedback.",
@@ -1388,7 +1388,7 @@ export const AgendaData = [
       {
         key: "27-9",
         time: "15:20 - 15:40",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Plenary",
         title: "Break",
         details: "A short break to refresh and regroup before moving to the final pitching sessions.",
@@ -1397,7 +1397,7 @@ export const AgendaData = [
       {
         key: "27-10",
         time: "15:45 - 17:00",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Plenary",
         title: "Pitching: 3 Minutes Per Team",
         details: "Each team delivers a concise, three-minute pitch summarizing their innovative solution to key challenges.",
@@ -1406,7 +1406,7 @@ export const AgendaData = [
       {
         key: "27-11",
         time: "17:00 - 18:00",
-        location: "MBOA Hub",
+        location: "TBC",
         header: "Results & Wrap Up",
         title: "Results & Wrap Up",
         details: "Conclude the day by reviewing outcomes, acknowledging team efforts, and setting the stage for tomorrow.",
@@ -1423,7 +1423,7 @@ export const AgendaData = [
       {
         key: "30-1",
         time: "11:00 - 12:00",
-        location: "SINAHA Hotel",
+        location: "TBC",
         header: "Arrival and networking",
         title: "Welcome & Networking Kickoff",
         details: "Participants arrive and begin networking, setting the stage for a day of insightful sessions. Enjoy light refreshments and make initial connections.",
@@ -1432,7 +1432,7 @@ export const AgendaData = [
       {
         key: "30-2",
         time: "12:00 - 12:15",
-        location: "SINAHA Hotel",
+        location: "TBC",
         header: "Welcome and Lab overview",
         title: "Lab Overview & Opening Remarks",
         details: "Join us as we welcome everyone and provide an overview of the lab's objectives and schedule, outlining what to expect during the day.",
@@ -1441,7 +1441,7 @@ export const AgendaData = [
       {
         key: "30-3",
         time: "12:15 - 12:25",
-        location: "SINAHA Hotel",
+        location: "TBC",
         header: "Cultural Interlude",
         title: "Celebrating Our Culture",
         details: "Enjoy a brief cultural performance showcasing Cameroon’s rich heritage, offering a refreshing break and inspiring creativity.",
@@ -1450,7 +1450,7 @@ export const AgendaData = [
       {
         key: "30-4",
         time: "12:25 - 13:25",
-        location: "SINAHA Hotel",
+        location: "TBC",
         header: "Pitch Contest",
         title: "Innovative Pitch Contest",
         details: "Teams present their project pitches in a competitive format, with a chance to win awards and secure support for their innovative solutions.",
@@ -1459,7 +1459,7 @@ export const AgendaData = [
       {
         key: "30-5",
         time: "13:25 - 13:55",
-        location: "SINAHA Hotel",
+        location: "TBC",
         header: "Panel Discussion",
         title: "Young Innovator Realities and Hacks",
         details: "A panel of industry experts and young innovators discusses real-world challenges and practical hacks to succeed in the competitive landscape. Gain insights, strategies, and inspiration.",
@@ -1468,7 +1468,7 @@ export const AgendaData = [
       {
         key: "30-6",
         time: "14:00 - 14:15",
-        location: "SINAHA Hotel",
+        location: "TBC",
         header: "Results and Prize Awards",
         title: "Results & Prize Awards",
         details: "Celebrate the winners as we announce the results and award prizes for standout projects. Recognize the efforts and innovation of our teams.",
@@ -1477,7 +1477,7 @@ export const AgendaData = [
       {
         key: "30-7",
         time: "14:15 - 14:25",
-        location: "SINAHA Hotel",
+        location: "TBC",
         header: "Advertisers Space",
         title: "Showcase Diverse Industry Solutions",
         details: "This slot is dedicated to all our valued advertisers and exhibitors. It offers a platform to showcase your brand, services, and support for community growth across diverse sectors. Engage with attendees, share your expertise, and expand your network in a space designed for collaboration and visibility.",
@@ -1486,7 +1486,7 @@ export const AgendaData = [
       {
         key: "30-8",
         time: "14:25 - 14:35",
-        location: "SINAHA Hotel",
+        location: "TBC",
         header: "Closign speech",
         title: "Inspiring Closing Speech",
         details: "Listen to a powerful closing speech that encapsulates the day's achievements and sets the direction for continued innovation and collaboration.",
@@ -1495,7 +1495,7 @@ export const AgendaData = [
       {
         key: "30-9",
         time: "14:35 - 14:55",
-        location: "SINAHA Hotel",
+        location: "TBC",
         header: "Closing remarks and mentorship pairing",
         title: "Final Remarks & Mentorship Pairing",
         details: "Conclude the day with final remarks and a unique mentorship pairing session, connecting promising innovators with experienced mentors.",
@@ -1504,7 +1504,7 @@ export const AgendaData = [
       {
         key: "30-10",
         time: "14:55 - 16:00",
-        location: "SINAHA Hotel",
+        location: "TBC",
         header: "Cocktail and Networking",
         title: "Cocktail Hour & Networking",
         details: "Unwind and network over cocktails. Enjoy relaxed conversations, build connections, and celebrate the day’s successes.",

@@ -997,7 +997,7 @@ export const FAQData = [
     question: "What are the dates and location of the event?",
     links: [],
     answer:
-      "ILID 2025 will take place from April 25th-27th and 30th, 2025, in Yaoundé, Cameroon. Day One (opening ceremony) and Day Four (closing ceremony) will be held at SINAHA Hotel, while Day Three and Day Four (lab sessions) will take place at MBOA Hub.",
+      "ILID 2025 will take place from April 25th-27th and 30th, 2025, in Yaoundé, Cameroon. The exact venue will be confirmed soon and will be communicated.",
   },
   {
     id: 3,
@@ -1182,7 +1182,7 @@ export const AgendaData = [
       {
         key: "25-12",
         time: "15:15 - 15:30",
-        location: "SINAHA Hotel",
+        llocation: "SINAHA Hotel",
         header: "Presentation of Innovation Lab and Closing remarks",
         title: "Shaping Tomorrow: The Innovation Lab Unveiled",
         details: "This final segment unveils the upcoming Innovation Lab experience—its objectives, structure, and the unique opportunities it offers selected participants. The session will close with reflections from event organizers, celebrating the day’s impact and setting the tone for what’s ahead.",
@@ -1495,7 +1495,7 @@ export const AgendaData = [
       {
         key: "30-9",
         time: "14:35 - 14:55",
-        location: "SINAHA Hotel",
+        location: "TBC",
         header: "Closing remarks and mentorship pairing",
         title: "Final Remarks & Mentorship Pairing",
         details: "Conclude the day with final remarks and a unique mentorship pairing session, connecting promising innovators with experienced mentors.",
@@ -1504,7 +1504,7 @@ export const AgendaData = [
       {
         key: "30-10",
         time: "14:55 - 16:00",
-        location: "SINAHA Hotel",
+        location: "TBC",
         header: "Cocktail and Networking",
         title: "Cocktail Hour & Networking",
         details: "Unwind and network over cocktails. Enjoy relaxed conversations, build connections, and celebrate the day’s successes.",
