@@ -47,15 +47,13 @@ const VenueBanner = () => {
             <div className={styles.vslider__content}>
               <div className={styles.vfirst__slide}>
                 <p>
-                  YAOUNDE, CAMEROON. SINAHA HOTEL & MBOA HUB | 25th - 27th &
-                  30th APRIL, 2025
+                  YAOUNDE, CAMEROON. SINAHA HOTEL & MBOA HUB | 25th - 27th & 30th APRIL, 2025
                 </p>
                 <span className={styles.vspan__button}></span>
               </div>
               <div className={styles.vfirst__slide}>
-                <p>
-                  YAOUNDE, CAMEROON. SINAHA HOTEL & MBOA HUB | 25th - 27th &
-                  30th APRIL, 2025
+              <p>
+                  YAOUNDE, CAMEROON. SINAHA HOTEL & MBOA HUB | 25th - 27th & 30th APRIL, 2025
                 </p>
                 <span className={styles.vspan__button}></span>
               </div>
@@ -65,16 +63,14 @@ const VenueBanner = () => {
           <div className={styles.vslider__main} ref={secondSlide}>
             <div className={styles.vslider__content}>
               <div className={styles.vfirst__slide}>
-                <p>
-                  YAOUNDE, CAMEROON. SINAHA HOTEL & MBOA HUB | 25th - 27th &
-                  30th APRIL, 2025
+              <p>
+                  YAOUNDE, CAMEROON. SINAHA HOTEL & MBOA HUB | 25th - 27th & 30th APRIL, 2025
                 </p>
                 <span className={styles.vspan__button}></span>
               </div>
               <div className={styles.vfirst__slide}>
-                <p>
-                  YAOUNDE, CAMEROON. SINAHA HOTEL & MBOA HUB | 25th - 27th &
-                  30th APRIL, 2025
+              <p>
+                  YAOUNDE, CAMEROON. SINAHA HOTEL & MBOA HUB | 25th - 27th & 30th APRIL, 2025
                 </p>
                 <span className={styles.vspan__button}></span>
               </div>

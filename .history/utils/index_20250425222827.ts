@@ -997,7 +997,7 @@ export const FAQData = [
     question: "What are the dates and location of the event?",
     links: [],
     answer:
-      "ILID 2025 will take place from April 25th-27th and 30th, 2025, in Yaoundé, Cameroon. Day One (opening ceremony) and Day Four (closing ceremony) will be held at SINAHA Hotel, while Day Two and Day Three (lab sessions) will take place at MBOA Hub.",
+      "ILID 2025 will take place from April 25th-27th and 30th, 2025, in Yaoundé, Cameroon. Day One (opening ceremony) and Day Four (closing ceremony) will be held at SINAHA Hotel, while Day Two and Day Four (lab sessions) will take place at MBOA Hub.",
   },
   {
     id: 3,

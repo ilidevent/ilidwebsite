@@ -90,7 +90,7 @@ const AboutPageWrapper = () => {
   const venueContent = {
     header: "ILID 2025 event venue",
     keywords: ["ILID", "2025"],
-    text: "The event premieres in Yaoundé, Cameroon. Day One (opening ceremony) and Day Four (closing ceremony) will be held at SINAHA Hotel, while Day Two and Day Three (lab sessions) will take place at MBOA Hub.",
+    text: "The event premieres in Yaoundé, Cameroon. Day One (opening ceremony) and Day Four (closing ceremony) will be held at SINAHA Hotel, while Day Two and Day Four (lab sessions) will take place at MBOA Hub.",
   };
 
   const countDownContent = {
