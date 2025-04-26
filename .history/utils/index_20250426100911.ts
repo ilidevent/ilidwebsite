@@ -992,7 +992,7 @@ export const SpeakerData = [
   {
     id: 14,
     image: FACILITATOR10,
-    name: "Witah Georjane",
+    name: "Witah George",
     position: "Chief of Staff at Yogaya",
     roles: ["workshop"],
   },

@@ -989,13 +989,6 @@ export const SpeakerData = [
     roles: ["workshop"],
   },
 
-  {
-    id: 14,
-    image: FACILITATOR10,
-    name: "Witah Georjane",
-    position: "Chief of Staff at Yogaya",
-    roles: ["workshop"],
-  },
 ];
 
 export const PartnerData = [

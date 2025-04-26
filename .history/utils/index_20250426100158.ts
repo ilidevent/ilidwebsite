@@ -39,7 +39,6 @@ import SPEAKER from "../public/images/Andrew Ako Ako.jpg";
 import SPEAKER2 from "../public/images/BEKOMBO Jeanne.jpg";
 import SPEAKER3 from "../public/images/Micheline ABOMO.jpg"
 import SPEAKER4 from "../public/images/Mfontoh Blaise.jpg"
-import FACILITATOR0 from "../public/images/charlyclaude.jpg"
 import FACILITATOR from "../public/images/gerginochouma.jpg"
 import FACILITATOR2 from "../public/images/audreybikele.jpg"
 import FACILITATOR3 from "../public/images/kacdeubaudoin.jpg"
@@ -49,7 +48,7 @@ import FACILITATOR6 from "../public/images/aghaesthelyne.jpg"
 import FACILITATOR7 from "../public/images/patrick Fonkou.jpg"
 import FACILITATOR8 from "../public/images/mbofranky.jpg"
 import FACILITATOR9 from "../public/images/nformiriam.jpg"
-import FACILITATOR10 from "../public/images/witahgeorgane.jpg"
+import FACILITATOR10 from "../public/images/"
 
 import TEAM from "../public/images/Tarh.jpg";
 import TEAM2 from "../public/images/Lele.jpg";
@@ -919,13 +918,6 @@ export const SpeakerData = [
     roles: ["speaker"],
   },
   {
-    id: 0,
-    image: FACILITATOR0,
-    name: "Mr. Claude FONKEM",
-    position: "Monitoring & Evaluation Expert for Projects & Programs",
-    roles: ["workshop"],
-  },
-  {
     id: 4,
     image: FACILITATOR,
     name: "Gergino Chounna",
@@ -975,13 +967,6 @@ export const SpeakerData = [
     roles: ["workshop"],
   },
   {
-    id: 13,
-    image: FACILITATOR9,
-    name: "Nfor Miriam",
-    position: "Mechatronics & Automative Engineering Student",
-    roles: ["workshop"],
-  },
-  {
     id: 12,
     image: FACILITATOR8,
     name: "Mbo Franky",
@@ -989,13 +974,6 @@ export const SpeakerData = [
     roles: ["workshop"],
   },
 
-  {
-    id: 14,
-    image: FACILITATOR10,
-    name: "Witah Georjane",
-    position: "Chief of Staff at Yogaya",
-    roles: ["workshop"],
-  },
 ];
 
 export const PartnerData = [

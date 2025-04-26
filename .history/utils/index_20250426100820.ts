@@ -990,10 +990,10 @@ export const SpeakerData = [
   },
 
   {
-    id: 14,
-    image: FACILITATOR10,
-    name: "Witah Georjane",
-    position: "Chief of Staff at Yogaya",
+    id: 12,
+    image: FACILITATOR8,
+    name: "Mbo Franky",
+    position: "Civil Engineer",
     roles: ["workshop"],
   },
 ];

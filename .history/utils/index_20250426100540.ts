@@ -975,13 +975,6 @@ export const SpeakerData = [
     roles: ["workshop"],
   },
   {
-    id: 13,
-    image: FACILITATOR9,
-    name: "Nfor Miriam",
-    position: "Mechatronics & Automative Engineering Student",
-    roles: ["workshop"],
-  },
-  {
     id: 12,
     image: FACILITATOR8,
     name: "Mbo Franky",
@@ -989,13 +982,6 @@ export const SpeakerData = [
     roles: ["workshop"],
   },
 
-  {
-    id: 14,
-    image: FACILITATOR10,
-    name: "Witah Georjane",
-    position: "Chief of Staff at Yogaya",
-    roles: ["workshop"],
-  },
 ];
 
 export const PartnerData = [
