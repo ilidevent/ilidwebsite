@@ -971,7 +971,7 @@ export const SpeakerData = [
     name: "Mbo Franky",
     position: "Civil Engineer",
     roles: ["workshop"],
-  }
+  },
 ];
 
 export const PartnerData = [

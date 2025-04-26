@@ -41,13 +41,11 @@ import SPEAKER2 from "../public/images/BEKOMBO Jeanne.jpg";
 import SPEAKER3 from "../public/images/Micheline ABOMO.jpg"
 import SPEAKER4 from "../public/images/Mfontoh Blaise.jpg"
 import FACILITATOR from "../public/images/gerginochouma.jpg"
-import FACILITATOR2 from "../public/images/audreybikele.jpg"
-import FACILITATOR3 from "../public/images/kacdeubaudoin.jpg"
-import FACILITATOR4 from "../public/images/prettyngemoh.jpg"
-import FACILITATOR5 from "../public/images/josuegodwe.jpg"
-import FACILITATOR6 from "../public/images/aghaesthelyne.jpg"
-import FACILITATOR7 from "../public/images/patrick Fonkou.jpg"
-import FACILITATOR8 from "../public/images/mbofranky.jpg"
+import FACILITATOR from "../public/images/gerginochouma.jpg"
+import FACILITATOR from "../public/images/gerginochouma.jpg"
+import FACILITATOR from "../public/images/gerginochouma.jpg"
+import FACILITATOR from "../public/images/gerginochouma.jpg"
+import FACILITATOR from "../public/images/gerginochouma.jpg"
 
 import TEAM from "../public/images/Tarh.jpg";
 import TEAM2 from "../public/images/Lele.jpg";
@@ -918,60 +916,32 @@ export const SpeakerData = [
   },
   {
     id: 4,
-    image: FACILITATOR,
+    image: IMAGE23,
     name: "Gergino Chounna",
-    position: "Environmental Engineer",
+    position: "Details to be revealed shortly",
     roles: ["workshop"],
   },
   {
     id: 5,
-    image: FACILITATOR2,
-    name: "Audrey Bikele",
-    position: "Environmental Engineer",
+    image: IMAGE23,
+    name: "TBA",
+    position: "Details to be revealed shortly",
     roles: ["workshop"],
   },
   {
     id: 7,
-    image: FACILITATOR3,
-    name: "Kacdeu Baudoin",
-    position: "Civil Engineer",
+    image: IMAGE23,
+    name: "TBA",
+    position: "Details to be revealed shortly",
     roles: ["workshop"],
   },
   {
     id: 8,
-    image: FACILITATOR4,
-    name: "Pretty Ngemoh",
-    position: "Civil Engineer",
+    image: IMAGE23,
+    name: "TBA",
+    position: "Details to be revealed shortly",
     roles: ["workshop"],
   },
-  {
-    id: 9,
-    image: FACILITATOR5,
-    name: "Josue Godwe",
-    position: "Civil Engineer",
-    roles: ["workshop"],
-  },
-  {
-    id: 10,
-    image: FACILITATOR6,
-    name: "Agha Esthelyne",
-    position: "Civil Engineer",
-    roles: ["workshop"],
-  },
-  {
-    id: 11,
-    image: FACILITATOR7,
-    name: "Patrick Fonkou",
-    position: "Doctoral Researcher in Circular Economy",
-    roles: ["workshop"],
-  },
-  {
-    id: 12,
-    image: FACILITATOR8,
-    name: "Mbo Franky",
-    position: "Civil Engineer",
-    roles: ["workshop"],
-  }
 ];
 
 export const PartnerData = [

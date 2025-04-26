@@ -968,10 +968,10 @@ export const SpeakerData = [
   {
     id: 12,
     image: FACILITATOR8,
-    name: "Mbo Franky",
+    name: "Agha Esthelyne",
     position: "Civil Engineer",
     roles: ["workshop"],
-  }
+  },
 ];
 
 export const PartnerData = [

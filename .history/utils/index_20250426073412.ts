@@ -940,38 +940,10 @@ export const SpeakerData = [
   {
     id: 8,
     image: FACILITATOR4,
-    name: "Pretty Ngemoh",
-    position: "Civil Engineer",
+    name: "TBA",
+    position: "Details to be revealed shortly",
     roles: ["workshop"],
   },
-  {
-    id: 9,
-    image: FACILITATOR5,
-    name: "Josue Godwe",
-    position: "Civil Engineer",
-    roles: ["workshop"],
-  },
-  {
-    id: 10,
-    image: FACILITATOR6,
-    name: "Agha Esthelyne",
-    position: "Civil Engineer",
-    roles: ["workshop"],
-  },
-  {
-    id: 11,
-    image: FACILITATOR7,
-    name: "Patrick Fonkou",
-    position: "Doctoral Researcher in Circular Economy",
-    roles: ["workshop"],
-  },
-  {
-    id: 12,
-    image: FACILITATOR8,
-    name: "Mbo Franky",
-    position: "Civil Engineer",
-    roles: ["workshop"],
-  }
 ];
 
 export const PartnerData = [

@@ -954,21 +954,7 @@ export const SpeakerData = [
   {
     id: 10,
     image: FACILITATOR6,
-    name: "Agha Esthelyne",
-    position: "Civil Engineer",
-    roles: ["workshop"],
-  },
-  {
-    id: 11,
-    image: FACILITATOR7,
-    name: "Patrick Fonkou",
-    position: "Doctoral Researcher in Circular Economy",
-    roles: ["workshop"],
-  },
-  {
-    id: 12,
-    image: FACILITATOR8,
-    name: "Mbo Franky",
+    name: "A",
     position: "Civil Engineer",
     roles: ["workshop"],
   }
