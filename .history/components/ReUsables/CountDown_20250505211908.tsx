@@ -90,63 +90,63 @@
 // export default CountDown;
 
 
-"use client";
+// "use client";
 
-import React, { useState, useEffect } from "react";
-import styles from "../../styles/ReUsables/countdown.module.scss";
+// import React, { useState, useEffect } from "react";
+// import styles from "../../styles/ReUsables/countdown.module.scss";
 
-const CountDown = () => {
-  // Pad numbers below 10 with leading zero
-  const padNumber = (num: number): string => (num < 10 ? `0${num}` : num.toString());
+// const CountDown = () => {
+//   // Pad numbers below 10 with leading zero
+//   const padNumber = (num: number): string => (num < 10 ? `0${num}` : num.toString());
 
-  // Calculate time left until April 25th of the current year
-  const calculateTimeLeft = () => {
-    const now = new Date();
-    const targetDate = new Date(now.getFullYear(), 3, 25);
-    const difference = targetDate.getTime() - now.getTime();
+//   // Calculate time left until April 25th of the current year
+//   const calculateTimeLeft = () => {
+//     const now = new Date();
+//     const targetDate = new Date(now.getFullYear(), 3, 25);
+//     const difference = targetDate.getTime() - now.getTime();
 
-    // If the date has passed or is now, return zeros
-    if (difference <= 0) {
-      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
-    }
+//     // If the date has passed or is now, return zeros
+//     if (difference <= 0) {
+//       return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+//     }
 
-    return {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / (1000 * 60)) % 60),
-      seconds: Math.floor((difference / 1000) % 60),
-    };
-  };
+//     return {
+//       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+//       hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+//       minutes: Math.floor((difference / (1000 * 60)) % 60),
+//       seconds: Math.floor((difference / 1000) % 60),
+//     };
+//   };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  const [mounted, setMounted] = useState(false);
+//   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+//   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
-    setMounted(true);
-    const timer = setInterval(() => setTimeLeft(calculateTimeLeft()), 1000);
-    return () => clearInterval(timer);
-  }, []);
+//   useEffect(() => {
+//     setMounted(true);
+//     const timer = setInterval(() => setTimeLeft(calculateTimeLeft()), 1000);
+//     return () => clearInterval(timer);
+//   }, []);
 
-  if (!mounted) return null;
+//   if (!mounted) return null;
 
-  return (
-    <div className={styles.countdown__wrapper}>
-      {([
-        { label: "Days", value: timeLeft.days },
-        { label: "Hours", value: timeLeft.hours },
-        { label: "Minutes", value: timeLeft.minutes },
-        { label: "Seconds", value: timeLeft.seconds },
-      ] as const).map(({ label, value }) => (
-        <div key={label} className={styles.count__wrapper}>
-          <div className={styles.count__box}>
-            <span>{padNumber(value)}</span>
-          </div>
-          <span className={styles.count__content}>{label}</span>
-        </div>
-      ))}
-    </div>
-  );
-};
+//   return (
+//     <div className={styles.countdown__wrapper}>
+//       {([
+//         { label: "Days", value: timeLeft.days },
+//         { label: "Hours", value: timeLeft.hours },
+//         { label: "Minutes", value: timeLeft.minutes },
+//         { label: "Seconds", value: timeLeft.seconds },
+//       ] as const).map(({ label, value }) => (
+//         <div key={label} className={styles.count__wrapper}>
+//           <div className={styles.count__box}>
+//             <span>{padNumber(value)}</span>
+//           </div>
+//           <span className={styles.count__content}>{label}</span>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
 
-export default CountDown;
+// export default CountDown;
 

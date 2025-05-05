@@ -112,7 +112,7 @@ const HomePageWrapper = () => {
     keywords: [],
     // text: "Stick around as we get closer to ILID 2025. A space where bright minds come together, to innovate, collaborate and create lasting change.",
     // text: "ILID 2025 is now live! Enjoy inspiring sessions, hands-on labs, and networking moments that spark innovative ideas and forge lasting partnerships.",
-    text: "A huge thank-you to everyone who joined us! We hope you walked away energized by our inspiring sessions and more. Stay tuned for session recordings, photo highlights, and details on our next event.",
+    
     buttonData: {
       name: "Register for summit",
       link: "https://shorturl.at/zfxQQ",
