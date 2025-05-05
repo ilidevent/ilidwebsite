@@ -10,10 +10,10 @@ const CountDown = () => {
   // Function to calculate time remaining until April 25th.
   const calculateTimeLeft = () => {
     const now = new Date();
-    const targetYear = now.getFullYear();
+    let targetYear = now.getFullYear();
 
     // Create a target date: April is month index 3 (0-indexed)
-    const targetDate = new Date(targetYear, 4, 24);
+    let targetDate = new Date(targetYear, 5, 25);
 
     // // If the target date is in the past, set it to April 25th of next year.
     // if (now > targetDate) {

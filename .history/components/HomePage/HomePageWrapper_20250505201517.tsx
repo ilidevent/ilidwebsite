@@ -110,8 +110,8 @@ const HomePageWrapper = () => {
   const countDownContent = {
     header: "Countdown to ILID 2025",
     keywords: [],
-    text: "Stick around as we get closer to ILID 2025. A space where bright minds come together, to innovate, collaborate and create lasting change.",
-    // text: "ILID 2025 is now live! Enjoy inspiring sessions, hands-on labs, and networking moments that spark innovative ideas and forge lasting partnerships.",
+    // text: "Stick around as we get closer to ILID 2025. A",
+    text: "ILID 2025 is now live! Enjoy inspiring sessions, hands-on labs, and networking moments that spark innovative ideas and forge lasting partnerships.",
     buttonData: {
       name: "Register for summit",
       link: "https://shorturl.at/zfxQQ",
