@@ -32,7 +32,7 @@ const Navbar = ({ animationFinished }: { animationFinished: boolean }) => {
     {
       name: "Team",
       link: "/team",
-    },
+    }
   ];
 
   const buttonOne = {
@@ -50,6 +50,7 @@ const Navbar = ({ animationFinished }: { animationFinished: boolean }) => {
 
   //Sidebar
   const [activeSide, setActiveSide] = useState(false);
+
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);

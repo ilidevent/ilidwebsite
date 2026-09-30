@@ -118,7 +118,7 @@ const Footer = () => {
               className={styles.better}
               onClick={() => setActiveBetter(!activeBetter)}
             >
-              Better Marque
+              BetterMarque SARL
             </span>
           </p>
         </div>

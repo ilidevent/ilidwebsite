@@ -34,7 +34,7 @@ const BetterMarque = ({
   const footerRef = useRef(null);
   const refs = useRef<HTMLParagraphElement[]>([]);
   const betterText =
-    "The key to Better Marque's success lies in our ability to deliver unique experiences to our end clients. We are committed to helping you leave a lasting impression.";
+    "The key to BetterMarque SARL's success lies in our ability to deliver unique experiences to our end clients. We are committed to helping you leave a lasting impression.";
 
   const splitWords = () => {
     return betterText.split(" ").map((word, i) => (
@@ -46,7 +46,7 @@ const BetterMarque = ({
             }
           }}
           className={`${styles.word} ${
-            word === "Better" || word === "Marque" || word === "Marque's"
+            word === "BetterMarque" || word === "SARL" || word === "SARL's"
               ? styles.highlight
               : ""
           }`}
@@ -98,11 +98,12 @@ const BetterMarque = ({
     );
 
     //TL 2
-    tl2.to(betterRef.current, {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-      ease: "power4.inOut",
-      duration: 0.7,
-    })
+    tl2
+      .to(betterRef.current, {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+        ease: "power4.inOut",
+        duration: 0.7,
+      })
       .to(
         logoRef.current,
         {

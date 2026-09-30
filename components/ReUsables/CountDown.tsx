@@ -102,7 +102,8 @@ const CountDown = () => {
   // Calculate time left until April 25th of the current year
   const calculateTimeLeft = () => {
     const now = new Date();
-    const targetDate = new Date(now.getFullYear(), 3, 25);
+    // const targetDater = new Date(now.getFullYear(), 3, 25);
+    const targetDate = new Date(now.getFullYear(), 10, 25);
     const difference = targetDate.getTime() - now.getTime();
 
     // If the date has passed or is now, return zeros
