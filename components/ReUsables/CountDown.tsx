@@ -103,7 +103,7 @@ const CountDown = () => {
   const calculateTimeLeft = () => {
     const now = new Date();
     // const targetDater = new Date(now.getFullYear(), 3, 25);
-    const targetDate = new Date(now.getFullYear(), 12, 20);
+    const targetDate = new Date(now.getFullYear(), 12, 15);
     const difference = targetDate.getTime() - now.getTime();
 
     // If the date has passed or is now, return zeros
